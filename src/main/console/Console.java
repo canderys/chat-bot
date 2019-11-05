@@ -23,7 +23,7 @@ public class Console {
 		in.close();
 		return a;
 	}
-	
+
 	public static String ReadLine()
 	{
 		Scanner in = new Scanner(System.in);
