@@ -1,19 +1,29 @@
 package main.logic;
 
+import java.util.List;
+
+
+import main.requests.RequestProcessor;
 import main.console.Console;
-import main.questions.Generator;
-import main.questions.Question;
+import main.statistics.HeroStatistics;
+import main.statistics.StatisticsManager;
 
 public class Logic {
 
 	public static void main(String[] args)
 	{
-		Console.Print("hello");
-		Generator generator  = new Generator("questions.txt");
-		for(Question question : generator.quetions)
+		StatisticsManager statManager = new StatisticsManager();
+		List<HeroStatistics> fullStat = statManager.getFullStat();
+		RequestProcessor requestProcessor = new RequestProcessor(fullStat);
+		Console.Print("Hello, I am StatBot. I can help you find Dota 2 heroes statistics. Use help to show available commands");
+		while (true)
 		{
-			Console.Print(question.Text);
-			question.Answer =  Console.Read();
+			String request = Console.ReadLine();
+			if (request.compareTo("exit") == 0)
+				break;
+			Console.Print(requestProcessor.GetRequest(request));
 		}
+		//Console.Print(statManager.getStrStat(fullStat));
+		//Console.Print(StatisticsLoader.GetStatisticsByLink("https://api.stratz.com/api/v1/Hero/directory/detail"));
 	}
 }
