@@ -6,6 +6,7 @@ import main.requests.RequestProcessor;
 
 import main.console.Console;
 import main.statistics.HeroStatistics;
+import main.statistics.StatisticsLoader;
 import main.statistics.StatisticsManager;
 
 public class Logic {

@@ -11,6 +11,11 @@ public class StatisticsManager implements StatisticsGetter
 	{
 		StatHandler statHandler = new StatHandler();
 		List<StatInfo> processedStatistics = statHandler.getStatisticsForParse();
+		return getFullStat(processedStatistics);
+	}
+	
+	public List<HeroStatistics> getFullStat(List<StatInfo> processedStatistics)
+	{
 		List<HeroStatistics> finishedStat = null;
 		for(StatInfo currentStat : processedStatistics )
 		{
