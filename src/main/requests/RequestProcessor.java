@@ -19,7 +19,7 @@ public class RequestProcessor {
 		availableRequests.put("getallstat", new AllStatRequest());
 	}
 	
-	public String GetRequest(String request)
+	public RequestResult GetRequest(String request)
 	{
 		String currentRequest = request.toLowerCase();
 		currentRequest = currentRequest.trim();
@@ -30,13 +30,13 @@ public class RequestProcessor {
 			String requestName = currentRequest.substring(0, currentRequest.indexOf(' '));
 			if (availableRequests.containsKey(requestName))
 				return availableRequests.get(requestName).GetRequestResult(currentRequest.substring(currentRequest.indexOf(' ') + 1), heroStats);
-			return "Incorrect request. Type help to show available requests.\n";
+			return new RequestResult("Incorrect request. Type help to show available requests.\n", RequestType.ERROR);
 		}
 		else
 		{
 			if (availableRequests.containsKey(currentRequest))
 				return availableRequests.get(currentRequest).GetRequestResult("", heroStats);
-			return "Incorrect request. Type help to show available requests.\n";
+			return new RequestResult("Incorrect request. Type help to show available requests.\n", RequestType.ERROR);
 		}
 	}
 }

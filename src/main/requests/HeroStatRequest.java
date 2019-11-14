@@ -4,17 +4,27 @@ import java.util.List;
 import main.statistics.HeroStatistics;
 
 public class HeroStatRequest implements Request {
-	public String GetRequestResult(String splittedRequest, List<HeroStatistics> stat)
+	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat)
 	{
 		for (int i = 0; i < stat.size(); ++i)
 		{
 			if (stat.get(i).name.compareTo(splittedRequest) == 0)
 			{
-				return "Hero name: " + stat.get(i).name + "\nWin rate: " + 
+				return new RequestResult(MakeFinalName(stat.get(i).name) + "\n<b>Win rate:</b> <i>" +
 						Math.round(stat.get(i).winRate * 100.0) / 100.0 +
-						"%\nPick rate: " + Math.round(stat.get(i).pickRate * 100.0) / 100.0 + "%\n";
+						"%</i>\n<b>Pick rate:</b> <i>" + Math.round(stat.get(i).pickRate * 100.0) / 100.0 + "%</i>\n" +
+						"If you want to see full statistics, you can check this page: https://stratz.com/ru-ru/heroes/" + stat.get(i).id, RequestType.GETHEROSTAT);
 			}
 		}
-		return "This hero doesn't exist. Please, check his name and try again. Use help to get heroes list.\n";
+		return new RequestResult("This hero doesn't exist. Please, check his name and try again. Use <b>help</b> to get heroes list.\n", RequestType.ERROR);
+	}
+	
+	private String MakeFinalName(String name)
+	{
+		String[] splitted = name.split(" ");
+		String result = "";
+		for (int i = 0; i < splitted.length; ++i)
+			result += splitted[i].substring(0, 1).toUpperCase() + splitted[i].substring(1) + " ";
+		return result;
 	}
 }

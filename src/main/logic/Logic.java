@@ -2,8 +2,12 @@ package main.logic;
 
 import java.util.List;
 
-import main.requests.RequestProcessor;
+import org.telegram.telegrambots.ApiContextInitializer;
+import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import main.requests.RequestProcessor;
+import main.bot.Bot;
 import main.console.Console;
 import main.statistics.HeroStatistics;
 import main.statistics.StatisticsLoader;
@@ -13,22 +17,18 @@ public class Logic {
 
 	public static void main(String[] args)
 	{
-		StatisticsManager statManager = new StatisticsManager();
-		List<HeroStatistics> fullStat = statManager.getFullStat();
-
-		RequestProcessor requestProcessor = new RequestProcessor(fullStat);
-		Console.Print("Hello, I am StatBot. I can help you find Dota 2 heroes statistics. Use help to show available commands");
-		while (true)
+		ApiContextInitializer.init();
+		TelegramBotsApi botapi = new TelegramBotsApi();
+		try
 		{
-			String request = Console.ReadLine();
-			if (request.compareTo("exit") == 0)
-				break;
-			Console.Print(requestProcessor.GetRequest(request));
+			botapi.registerBot(new Bot());
+		} catch (TelegramApiException e)
+		{
+			e.printStackTrace();
+		}	
+		finally
+		{
+			botapi = null;
 		}
-		//Console.Print(statManager.getStrStat(fullStat));
-
-		Console.Print(statManager.getStrStat(fullStat));
-
-		//Console.Print(StatisticsLoader.GetStatisticsByLink("https://api.stratz.com/api/v1/Hero/directory/detail"));
 	}
 }
