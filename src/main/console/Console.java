@@ -31,4 +31,9 @@ public class Console {
 			return in.nextLine();
 		return "";
 	}
+
+	public static void Print(double value) {
+		System.out.println(Double.toString(value));
+		
+	}
 }

@@ -89,7 +89,7 @@ public class Bot extends TelegramLongPollingBot {
 			{
 				buttons.add(new ArrayList<InlineKeyboardButton>());
 			}
-			buttons.get(i / 4).add(new InlineKeyboardButton().setText(MakeFinalName(fullStat.get(i).name)).setCallbackData(fullStat.get(i).name));
+			buttons.get(i / 4).add(new InlineKeyboardButton().setText(MakeFinalName(fullStat.get(i).getName())).setCallbackData(fullStat.get(i).getName()));
 		}
 		keyboard.setKeyboard(buttons);
 		message.setReplyMarkup(keyboard);
