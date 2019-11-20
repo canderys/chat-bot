@@ -122,7 +122,6 @@ public class HeroStatistics {
 	{
 		String output = "";
 		String separator = System.lineSeparator();
-		Class<HeroStatistics> heroStatClass = HeroStatistics.class;
 		output+= "id: " + this.getId() + separator;
 		output+= "name: " + this.getName() + separator;
 		output+= "wins: " + this.getWinsAmount() + separator;
