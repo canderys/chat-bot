@@ -29,6 +29,7 @@ public class Console {
 		Scanner in = new Scanner(System.in);
 		while (in.hasNextLine())
 			return in.nextLine();
+		in.close();
 		return "";
 	}
 

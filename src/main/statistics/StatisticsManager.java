@@ -29,6 +29,23 @@ public class StatisticsManager implements StatisticsGetter
 	private String statFileName;
 	private String dateFileName;
 	
+	public String getStatFileName()
+	{
+		return statFileName;
+	}
+	public void setStatFileName(String name)
+	{
+		statFileName = name;
+	}
+	public String getDateFileName()
+	{
+		return dateFileName;
+	}
+	public void setDateFileName(String name)
+	{
+		dateFileName = name;
+	}
+	
 	public StatisticsManager()
 	{
 		this.statFileName = "stat.txt";
@@ -39,13 +56,28 @@ public class StatisticsManager implements StatisticsGetter
 	{
 		Calendar curDate = Calendar.getInstance();
 		StatisticsParser parser = new GsonStatisticsParser();
-		List<HeroStatistics> parsedStat = parser.getParsedStat();
+		List<HeroStatistics> parsedStat = parser.getFullParsedStat(List.of(new HeroData(), new MetaData(), new MathupData()));
 		calculateOtherFields(parsedStat);
 		Gson g = new Gson();
 		String serializedStatistics = g.toJson(parsedStat);
 		String date = g.toJson(curDate);
 		boolean correctWriteStat = writeFile(statFileName, serializedStatistics);
 		boolean correctWriteDate = writeFile(dateFileName, date);
+		if(!(correctWriteStat && correctWriteDate))
+			Console.Print("cant create statistics files");
+		return parsedStat;
+	}
+	public List<HeroStatistics> createStatisticsFiles(String statName, String dateName, List<Statistic> stats)
+	{
+		Calendar curDate = Calendar.getInstance();
+		StatisticsParser parser = new GsonStatisticsParser();
+		List<HeroStatistics> parsedStat = parser.getFullParsedStat(stats);
+		calculateOtherFields(parsedStat);
+		Gson g = new Gson();
+		String serializedStatistics = g.toJson(parsedStat);
+		String date = g.toJson(curDate);
+		boolean correctWriteStat = writeFile(statName, serializedStatistics);
+		boolean correctWriteDate = writeFile(dateName, date);
 		if(!(correctWriteStat && correctWriteDate))
 			Console.Print("cant create statistics files");
 		return parsedStat;
@@ -103,7 +135,6 @@ public class StatisticsManager implements StatisticsGetter
 		}
 		
 	}
-	/*
 	public static void main(String[] args)
 	{
 		StatisticsManager manager = new StatisticsManager();
@@ -113,7 +144,6 @@ public class StatisticsManager implements StatisticsGetter
 			Console.Print(hero.toString());
 		}
 	}
-	*/
 	
 	private void calculateOtherFields(List<HeroStatistics> finishedStat)
 	{
