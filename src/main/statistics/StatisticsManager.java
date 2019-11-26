@@ -135,7 +135,7 @@ public class StatisticsManager implements StatisticsGetter
 		}
 		
 	}
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		StatisticsManager manager = new StatisticsManager();
 		List<HeroStatistics> a =  manager.getFullStat();
@@ -143,7 +143,7 @@ public class StatisticsManager implements StatisticsGetter
 		{
 			Console.Print(hero.toString());
 		}
-	}
+	}*/
 	
 	private void calculateOtherFields(List<HeroStatistics> finishedStat)
 	{

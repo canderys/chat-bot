@@ -30,9 +30,11 @@ public class Bot extends TelegramLongPollingBot {
 	
 	private List<HeroStatistics> fullStat;
 	private RequestProcessor requestProcessor;
+	private boolean heroSelectingMode;
 	
 	public Bot()
 	{
+		heroSelectingMode = false;
 		StatisticsManager statManager = new StatisticsManager();
 		fullStat = statManager.getFullStat();
 		requestProcessor = new RequestProcessor(fullStat);
@@ -66,6 +68,8 @@ public class Bot extends TelegramLongPollingBot {
 	
 	private void processRequest(Message msg, RequestResult request)
 	{
+		if (!heroSelectingMode)
+		{
 		if (request.getRequestType() == RequestType.ERROR || request.getRequestType() == RequestType.HELP)
 			sendTextMessage(msg, request.getRequestText());
 		else 
@@ -74,6 +78,42 @@ public class Bot extends TelegramLongPollingBot {
 			else
 				if (request.getRequestType() == RequestType.GETHEROLIST)
 					sendStatisticsChoice(msg);
+				else
+					if (request.getRequestType() == RequestType.HEROADVICE)
+					{
+						sendAdvice(msg);
+					}
+					else
+					{
+						sendTextMessage(msg, "Unknown command");
+					}
+		}
+		else
+		{
+			if (request.getRequestType() == RequestType.HEROSELECT)
+			{
+				sendHeroSelect(msg);
+			}
+			else
+				if (request.getRequestType() == RequestType.HEROADVICERESULT)
+				{
+					sendHeroAdviceResult(msg, request.getRequestText());
+				}
+			{
+				sendTextMessage(msg, "Unknown command.\nYou are in hero select mode. Please select heroes or type end");
+			}
+		}
+	}
+	
+	private void sendHeroAdviceResult(Message msg, String text)
+	{
+		heroSelectingMode = false;
+		sendTextMessage(msg, text);
+	}
+	
+	private void sendHeroSelect(Message msg)
+	{
+		sendTextMessage(msg, "Hero has been successfully selected");
 	}
 	
 	private void sendStatisticsChoice(Message msg)
@@ -100,6 +140,12 @@ public class Bot extends TelegramLongPollingBot {
 		{
 			e.printStackTrace();
 		}
+	}
+	
+	private void sendAdvice(Message msg)
+	{
+		heroSelectingMode = true;
+		sendTextMessage(msg, "Selecting mode activated");
 	}
 	
 	private void sendStatistics(Message msg, String text)

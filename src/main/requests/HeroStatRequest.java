@@ -4,7 +4,7 @@ import java.util.List;
 import main.statistics.HeroStatistics;
 
 public class HeroStatRequest implements Request {
-	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat)
+	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
 	{
 		for (int i = 0; i < stat.size(); ++i)
 		{

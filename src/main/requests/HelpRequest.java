@@ -7,7 +7,7 @@ import java.util.Collections;
 import main.statistics.HeroStatistics;
 
 public class HelpRequest implements Request {
-	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat)
+	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
 	{
 		/*List<String> heroesNames = new ArrayList<String>();
 		for (int i = 0; i < stat.size(); ++i)
