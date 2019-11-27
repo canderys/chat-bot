@@ -8,9 +8,9 @@ public class AllStatRequest implements Request {
 	{
 		String result = "";
 		for (int i = 0; i < stat.size(); ++i)
-			result += "№" + (i + 1) + ".\nHero name: " + stat.get(i).getName() + "\nWin rate: " + 
+			result += "№" + (i + 1) + ".\nИмя героя: " + stat.get(i).getName() + "\nВинрейт: " + 
 					Math.round(stat.get(i).getWinRate() * 100.0) / 100.0 +
-						"%\nPick rate: " + Math.round(stat.get(i).getPickRate() * 100.0) / 100.0 + "%\n\n";
+						"%\nПроцент выбора: " + Math.round(stat.get(i).getPickRate() * 100.0) / 100.0 + "%\n\n";
 		return new RequestResult(result, RequestType.GETHEROLIST);
 	}
 }

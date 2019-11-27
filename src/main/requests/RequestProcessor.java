@@ -41,13 +41,13 @@ public class RequestProcessor {
 			String requestName = currentRequest.substring(0, currentRequest.indexOf(' '));
 			if (availableRequests.containsKey(requestName))
 				return availableRequests.get(requestName).GetRequestResult(currentRequest.substring(currentRequest.indexOf(' ') + 1), heroStats, this);
-			return new RequestResult("Incorrect request. Type help to show available requests.\n", RequestType.ERROR);
+			return new RequestResult("Неверный запрос, напишите <b>help</b>, чтобы показать доступные запросы.\n", RequestType.ERROR);
 		}
 		else
 		{
 			if (availableRequests.containsKey(currentRequest))
 				return availableRequests.get(currentRequest).GetRequestResult("", heroStats, this);
-			return new RequestResult("Incorrect request. Type help to show available requests.\n", RequestType.ERROR);
+			return new RequestResult("Неверный запрос, напишите <b>help</b>, чтобы показать доступные запросы.\n", RequestType.ERROR);
 		}
 	}
 	

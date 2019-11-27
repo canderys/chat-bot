@@ -15,6 +15,6 @@ public class HeroSelectRequest implements Request {
 	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
 	{
 		processor.addHeroToTeam(heroSide, splittedRequest);
-		return new RequestResult("You have selected hero", RequestType.HEROSELECT);
+		return new RequestResult("Вы успешно выбрали героя", RequestType.HEROSELECT);
 	}
 }

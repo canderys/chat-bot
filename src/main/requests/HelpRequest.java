@@ -16,7 +16,6 @@ public class HelpRequest implements Request {
 				+ "3. getallstat - показывает список героев и статистику для них\n"
 				+ "4. advicehero - находит наиболее подходящих героев для каждой команды, учитывая уже выбранных героев.\n"
 				+ "После ввода команды бот переходит в режим выбора героев. Чтобы выбрать героя, нужно использовать команду:\n"
-				+ "[dire/radiant] [hero_name] -\n"
-				+ "4. exit - stop bot\n", RequestType.HELP);
+				+ "[dire/radiant] [hero_name] - добавить в команду героя\n", RequestType.HELP);
 	}
 }
