@@ -80,28 +80,19 @@ public class Bot extends TelegramLongPollingBot {
 					sendStatisticsChoice(msg);
 				else
 					if (request.getRequestType() == RequestType.HEROADVICE)
-					{
 						sendAdvice(msg);
-					}
 					else
-					{
 						sendTextMessage(msg, "Unknown command");
-					}
 		}
 		else
 		{
 			if (request.getRequestType() == RequestType.HEROSELECT)
-			{
 				sendHeroSelect(msg);
-			}
 			else
 				if (request.getRequestType() == RequestType.HEROADVICERESULT)
-				{
 					sendHeroAdviceResult(msg, request.getRequestText());
-				}
-			{
-				sendTextMessage(msg, "Unknown command.\nYou are in hero select mode. Please select heroes or type end");
-			}
+				else
+					sendTextMessage(msg, "Unknown command.\nYou are in hero select mode. Please select heroes or type end");
 		}
 	}
 	

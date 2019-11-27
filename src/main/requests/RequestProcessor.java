@@ -1,8 +1,11 @@
 package main.requests;
 
 import java.util.Map;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.HashMap;
+
+import main.console.Console;
 import main.statistics.HeroStatistics;
 import java.util.List;
 
@@ -11,8 +14,8 @@ public class RequestProcessor {
 	private Map<String, Request> availableRequests;
 	private List<HeroStatistics> heroStats;
 	
-	private List<HeroStatistics> direTeam;
-	private List<HeroStatistics> radiantTeam;
+	private HashSet<HeroStatistics> direTeam = new HashSet<HeroStatistics>();
+	private HashSet<HeroStatistics> radiantTeam = new HashSet<HeroStatistics>();
 	
 	public RequestProcessor(List<HeroStatistics> stat)
 	{
@@ -56,14 +59,15 @@ public class RequestProcessor {
 	
 	public void addHeroToTeam(String team, String hero)
 	{
-		if (team.equalsIgnoreCase("dire") && !direTeam.contains(hero) && direTeam.size() < 5)
+		HeroStatistics heroStat = findHeroStatisticsWithName(hero);
+		if (team.equalsIgnoreCase("dire") && !direTeam.contains(heroStat) && direTeam.size() < 5)
 		{
-			direTeam.add(findHeroStatisticsWithName(hero));
+			direTeam.add(heroStat);
 			return;
 		}
-		if (team.equalsIgnoreCase("radiant") && !radiantTeam.contains(hero) && radiantTeam.size() < 5)
+		if (team.equalsIgnoreCase("radiant") && !radiantTeam.contains(heroStat) && radiantTeam.size() < 5)
 		{
-			radiantTeam.add(findHeroStatisticsWithName(hero));
+			radiantTeam.add(heroStat);
 			return;
 		}
 	}
@@ -73,10 +77,10 @@ public class RequestProcessor {
 		HashSet<HeroStatistics> heroes = new HashSet<HeroStatistics>();
 		for (int i = 0; i < heroStats.size(); ++i)
 			heroes.add(findHeroStatisticsWithName(heroStats.get(i).getName()));
-		for (int i = 0; i < direTeam.size(); ++i)
-			heroes.remove(direTeam.get(i));
-		for (int i = 0; i < direTeam.size(); ++i)
-			heroes.remove(radiantTeam.get(i));
+		for (HeroStatistics hero: direTeam)
+			heroes.remove(hero);
+		for (HeroStatistics hero: radiantTeam)
+			heroes.remove(hero);
 		HeroStatistics radiantBestHero = null;
 		double radiantBestHeroSynergy = -10000;
 		HeroStatistics direBestHero = null;
@@ -86,16 +90,16 @@ public class RequestProcessor {
 			double synergyRadiant = 0;
 			double synergyDire = 0;
 			
-			for (int i = 0; i < radiantTeam.size(); ++i)
+			for (HeroStatistics anotherHero: radiantTeam)
 			{
-				synergyRadiant += hero.getSynergyByHeroWith(radiantTeam.get(i).getId());
-				synergyDire += hero.getSynergyByHeroVs(radiantTeam.get(i).getId());
+				synergyRadiant += hero.getSynergyByHeroWith(anotherHero.getId());
+				synergyDire += hero.getSynergyByHeroVs(anotherHero.getId());
 			}
 			
-			for (int i = 0; i < direTeam.size(); ++i)
+			for (HeroStatistics anotherHero: direTeam)
 			{
-				synergyRadiant += hero.getSynergyByHeroVs(direTeam.get(i).getId());
-				synergyDire += hero.getSynergyByHeroWith(direTeam.get(i).getId());
+				synergyRadiant += hero.getSynergyByHeroVs(anotherHero.getId());
+				synergyDire += hero.getSynergyByHeroWith(anotherHero.getId());
 			}
 			
 			if (synergyRadiant > radiantBestHeroSynergy)

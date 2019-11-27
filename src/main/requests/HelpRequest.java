@@ -9,20 +9,14 @@ import main.statistics.HeroStatistics;
 public class HelpRequest implements Request {
 	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
 	{
-		/*List<String> heroesNames = new ArrayList<String>();
-		for (int i = 0; i < stat.size(); ++i)
-			heroesNames.add(stat.get(i).name);
-		Collections.sort(heroesNames);
-		String heroes = "";
-		for (int i = 0; i < heroesNames.size(); ++i)
-			heroes += (i + 1) + ". " + heroesNames.get(i) + "\n";*/
-		return new RequestResult("Bot can show statistics for heroes from game Dota 2. Statistics bases on stratz.com data\n"
-				+ "Bot has some commands:\n"
-				+ "1. help - show help and heroes list\n"
-				+ "2. getstat [hero_name] - show statistics for [hero_name]\n"
-				+ "3. getallstat - show statistics for all heroes\n"
-				+ "4. exit - stop bot\n"
-				/*+ "Heroes list:\n"
-				+ heroes*/, RequestType.HELP);
+		return new RequestResult("Бот умеет показывать различные статистики для героев игры Dota 2. Статистика основывается на данных сайта stratz.com \n"
+				+ "Бот имеет следующие команды:\n"
+				+ "1. help - показать справку\n"
+				+ "2. getstat [hero_name] - показать статистику для героя [hero_name]\n"
+				+ "3. getallstat - показывает список героев и статистику для них\n"
+				+ "4. advicehero - находит наиболее подходящих героев для каждой команды, учитывая уже выбранных героев.\n"
+				+ "После ввода команды бот переходит в режим выбора героев. Чтобы выбрать героя, нужно использовать команду:\n"
+				+ "[dire/radiant] [hero_name] -\n"
+				+ "4. exit - stop bot\n", RequestType.HELP);
 	}
 }
