@@ -68,6 +68,11 @@ public class Bot extends TelegramLongPollingBot {
 	
 	private void processRequest(Message msg, RequestResult request)
 	{
+		if (request.getRequestType() == RequestType.HEROES)
+		{
+			sendTextMessage(msg, request.getRequestText());
+			return;
+		}
 		if (!heroSelectingMode)
 		{
 		if (request.getRequestType() == RequestType.ERROR || request.getRequestType() == RequestType.HELP)
@@ -92,7 +97,7 @@ public class Bot extends TelegramLongPollingBot {
 				if (request.getRequestType() == RequestType.HEROADVICERESULT)
 					sendHeroAdviceResult(msg, request.getRequestText());
 				else
-					sendTextMessage(msg, "Unknown command.\nYou are in hero select mode. Please select heroes or type end");
+					sendTextMessage(msg, "Неизвестная команда.\nВы находитесь в режиме выбора героев. Пожалуйста, выберите героя или закончите выбор, написав <b>end</b>");
 		}
 	}
 	
@@ -104,7 +109,7 @@ public class Bot extends TelegramLongPollingBot {
 	
 	private void sendHeroSelect(Message msg)
 	{
-		sendTextMessage(msg, "Hero has been successfully selected");
+		sendTextMessage(msg, "Герой успешно добавлен. Продолжайте добавлять героев или закончите выбор, написав <b>end</b>");
 	}
 	
 	private void sendStatisticsChoice(Message msg)
@@ -136,7 +141,8 @@ public class Bot extends TelegramLongPollingBot {
 	private void sendAdvice(Message msg)
 	{
 		heroSelectingMode = true;
-		sendTextMessage(msg, "Selecting mode activated");
+		sendTextMessage(msg, "Вы вошли в режим выбора героев. Добавьте героя в соответствующую команду, используя [<b>radiant</b>/<b>dire</b>] [<i>heroname</i>].\n"
+				+ "Для получения списка всех героев используйте <b>getherolist</b>");
 	}
 	
 	private void sendStatistics(Message msg, String text)

@@ -28,6 +28,7 @@ public class RequestProcessor {
 		availableRequests.put("radiant", new HeroSelectRequest("radiant"));
 		availableRequests.put("dire", new HeroSelectRequest("dire"));
 		availableRequests.put("end", new HeroSelectEndingRequest());
+		availableRequests.put("getherolist", new HeroListRequest());
 	}
 	
 	public RequestResult GetRequest(String request)
