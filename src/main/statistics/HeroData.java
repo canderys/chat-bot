@@ -12,7 +12,7 @@ import com.google.gson.Gson;
 public class HeroData implements Statistic
 {
 	private int id;
-	private String displayName;
+	private String displayName = "";
 	
 	public int getId()
 	{

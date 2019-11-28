@@ -145,7 +145,7 @@ public class StatisticsManager implements StatisticsGetter
 		}
 	}*/
 	
-	private void calculateOtherFields(List<HeroStatistics> finishedStat)
+	public void calculateOtherFields(List<HeroStatistics> finishedStat)
 	{
 		int allGamesCounter = 0;
 		for(HeroStatistics record : finishedStat)

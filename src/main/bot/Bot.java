@@ -97,6 +97,9 @@ public class Bot extends TelegramLongPollingBot {
 				if (request.getRequestType() == RequestType.HEROADVICERESULT)
 					sendHeroAdviceResult(msg, request.getRequestText());
 				else
+					if (request.getRequestType() == RequestType.SELECTERROR)
+						sendTextMessage(msg, request.getRequestText());
+					else
 					sendTextMessage(msg, "Неизвестная команда.\nВы находитесь в режиме выбора героев. Пожалуйста, выберите героя или закончите выбор, написав <b>end</b>");
 		}
 	}
@@ -175,6 +178,12 @@ public class Bot extends TelegramLongPollingBot {
 			break;
 		case "lifestealer":
 			heroName = "life_stealer";
+			break;
+		case "zeus":
+			heroName = "zuus";
+			break;
+		case "centaur_warrunner":
+			heroName = "centaur";
 			break;
 		}
 		photo.setPhoto("http://cdn.dota2.com/apps/dota2/images/heroes/" + heroName + "_full.png");

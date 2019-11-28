@@ -58,19 +58,22 @@ public class RequestProcessor {
 		radiantTeam.clear();
 	}
 	
-	public void addHeroToTeam(String team, String hero)
+	public boolean addHeroToTeam(String team, String hero)
 	{
 		HeroStatistics heroStat = findHeroStatisticsWithName(hero);
+		if (heroStat == null)
+			return false;
 		if (team.equalsIgnoreCase("dire") && !direTeam.contains(heroStat) && direTeam.size() < 5)
 		{
 			direTeam.add(heroStat);
-			return;
+			return true;
 		}
 		if (team.equalsIgnoreCase("radiant") && !radiantTeam.contains(heroStat) && radiantTeam.size() < 5)
 		{
 			radiantTeam.add(heroStat);
-			return;
+			return true;
 		}
+		return false;
 	}
 	
 	public String findBestHeroes()
