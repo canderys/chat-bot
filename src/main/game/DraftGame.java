@@ -15,6 +15,10 @@ public class DraftGame implements Game<HeroStatistics>
 	private List<HeroStatistics> direPick = new ArrayList<HeroStatistics>();
 	private List<HeroStatistics> radiantPick = new ArrayList<HeroStatistics>();
 	private int phase = 0;
+	private boolean isBeginGame = true;
+	private Action lastAction = null;
+	private Action nextAction = null;
+	private HeroStatistics lastHero = null;
 	
 	public DraftGame(List<HeroStatistics> heroes)
 	{
@@ -49,6 +53,7 @@ public class DraftGame implements Game<HeroStatistics>
 		pickBanSequense.add(new PickInfo(Side.Radiant,Action.Ban));
 		pickBanSequense.add(new PickInfo(Side.Radiant,Action.Pick));
 		pickBanSequense.add(new PickInfo(Side.Dire,Action.Pick));
+		nextAction = pickBanSequense.get(0).getAction();
 	}
 	
 	public void pick(Side side, HeroStatistics heroStat)
@@ -70,6 +75,24 @@ public class DraftGame implements Game<HeroStatistics>
 
 	public String getState() {
 		StringBuilder message = new StringBuilder();
+		if(isBeginGame)
+		{
+			message.append("В этой игре нужно выбирать и запрещать героев для команды сил тьмы и сил света" + "\n");
+			message.append("Чтобы выбрать или запретить героя просто напишите его имя" + "\n");
+			isBeginGame = false;
+			return message.toString();
+		}
+		if(!isEnd()) {
+			if(lastAction != null) {
+				String action = (lastAction == Action.Pick) ? "выбран" : "запрещен";
+				message.append(String.format("Герой %s %s" + "\n",lastHero.getName(), action));
+			}
+			if(nextAction != null) {
+				String action = (nextAction == Action.Pick) ? "выбрать" : "запретить";
+				message.append(String.format("Сейчас вы должны %s героя" + "\n", action));
+			}
+			return message.toString();
+		}
 		message.append("Герои сил света: ");
 		for(HeroStatistics hero : radiantPick)
 			message.append(hero.getName() + " ");
@@ -80,8 +103,8 @@ public class DraftGame implements Game<HeroStatistics>
 		message.append("\n");
 		double synergyRadiantRelationDire = getRatioSynergy(radiantPick, direPick);
 		double synergyDireRelationRadiant = getRatioSynergy(direPick, radiantPick);
-		message.append("Синергия героев сил света " + synergyRadiantRelationDire);
-		message.append("Синергия героев сил тьмы " + synergyDireRelationRadiant);
+		message.append("Синергия героев сил света " + synergyRadiantRelationDire + "\n");
+		message.append("Синергия героев сил тьмы " + synergyDireRelationRadiant + "\n");
 		if(synergyRadiantRelationDire > synergyDireRelationRadiant)
 			message.append("Вероятность победы сил света выше");
 		else
@@ -109,10 +132,16 @@ public class DraftGame implements Game<HeroStatistics>
 	}
 
 	public boolean setState(HeroStatistics message) {
+		lastHero = message;
 		if(!availableHeroes.contains(message.getName()))
 			return false;
 		PickInfo currentAction = pickBanSequense.get(phase);
 		phase++;
+		lastAction  = currentAction.getAction();
+		if(phase < pickBanSequense.size())
+			nextAction = pickBanSequense.get(phase).getAction();
+		else
+			nextAction = null;
 		if(currentAction.getAction() == Action.Pick)
 			pick(currentAction.getSide(), message);
 		else
@@ -122,6 +151,6 @@ public class DraftGame implements Game<HeroStatistics>
 	}
 	
 	public boolean isEnd() {
-		return phase + 1 == pickBanSequense.size();
+		return !(phase < pickBanSequense.size());
 	}
 }

@@ -18,19 +18,28 @@ import main.statistics.StatisticsManager;
 
 class TestDraftGame {
 	private Game<HeroStatistics> draftGame;
+	private List<HeroStatistics> heroStat;
 	@BeforeEach
 	void setUp() throws Exception {
 		StatisticsGetter statGetter = new StatisticsManager();
-		List<HeroStatistics> heroStat =  statGetter.getFullStat();
+		heroStat =  statGetter.getFullStat();
 		draftGame = new DraftGame(heroStat);
-		for(int i = 0;i < 22;i++) {
-			draftGame.setState(heroStat.get(i));
-		}
+		StringBuilder expectedGreetings = new StringBuilder();
+		expectedGreetings.append("В этой игре нужно выбирать и запрещать героев для команды сил тьмы и сил света" + "\n");
+		expectedGreetings.append("Чтобы выбрать или запретить героя просто напишите его имя" + "\n");
+		String greetings = draftGame.getState();
+		assertEquals(greetings, expectedGreetings.toString());
 	}
 
 	@Test
 	void test() {
-		assertEquals(draftGame.getState(), "kek");
+		String firstAction = draftGame.getState();
+		assertEquals("Сейчас вы должны запретить героя" + "\n" , firstAction);
+		for(int i = 0;i < 22;i++) {
+			draftGame.setState(heroStat.get(i));
+			String action = draftGame.getState();
+		}
+		String action = draftGame.getState();
 	}
 
 }
