@@ -62,7 +62,7 @@ public class Bot extends TelegramLongPollingBot {
 			message = e.getMessage();
 			txt = message.getText();
 		}
-		RequestResult result = requestProcessor.GetRequest(txt);
+		RequestResult result = requestProcessor.getRequest(txt);
 		processRequest(message, result);
 	}
 	
@@ -128,7 +128,7 @@ public class Bot extends TelegramLongPollingBot {
 			{
 				buttons.add(new ArrayList<InlineKeyboardButton>());
 			}
-			buttons.get(i / 4).add(new InlineKeyboardButton().setText(MakeFinalName(fullStat.get(i).getName())).setCallbackData(fullStat.get(i).getName()));
+			buttons.get(i / 4).add(new InlineKeyboardButton().setText(makeFinalName(fullStat.get(i).getName())).setCallbackData(fullStat.get(i).getName()));
 		}
 		keyboard.setKeyboard(buttons);
 		message.setReplyMarkup(keyboard);
@@ -222,7 +222,7 @@ public class Bot extends TelegramLongPollingBot {
 		return "822763128:AAEdyCT3EQVZxJbJTrAsnC19Ap2PMd2t-Tw";
 	}
 	
-	private String MakeFinalName(String name)
+	private String makeFinalName(String name)
 	{
 		String[] splitted = name.split(" ");
 		String result = "";

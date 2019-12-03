@@ -6,8 +6,13 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class StatisticsLoader {
+	private String path;
+	public StatisticsLoader(String path)
+	{
+		this.path = path;
+	}
 	
-	public static String GetStatisticsByLink(String path)
+	public String downloadStatistics()
 	{
 		HttpURLConnection connection = null;
 		StringBuilder s = new StringBuilder();

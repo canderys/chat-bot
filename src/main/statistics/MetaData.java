@@ -65,6 +65,7 @@ public class MetaData implements Statistic
 
 	public String getStringStat() {
 		String link = "https://api.stratz.com/api/v1/Hero/metaTrend";
-		return StatisticsLoader.GetStatisticsByLink(link);
+		StatisticsLoader loader = new StatisticsLoader(link);
+		return loader.downloadStatistics();
 	}
 }

@@ -5,6 +5,8 @@ import java.util.HashSet;
 import java.util.List;
 
 import main.statistics.HeroStatistics;
+import synergy.SynergyCalculator;
+import synergy.SynergySummator;
 
 public class DraftGame implements Game<HeroStatistics>
 {
@@ -101,8 +103,9 @@ public class DraftGame implements Game<HeroStatistics>
 		for(HeroStatistics hero : direPick)
 			message.append(hero.getName() + " ");
 		message.append("\n");
-		double synergyRadiantRelationDire = getRatioSynergy(radiantPick, direPick);
-		double synergyDireRelationRadiant = getRatioSynergy(direPick, radiantPick);
+		SynergyCalculator synergyCalculator = new SynergySummator();
+		double synergyRadiantRelationDire = synergyCalculator.getRelativeSynergy(radiantPick, direPick);
+		double synergyDireRelationRadiant = synergyCalculator.getRelativeSynergy(direPick, radiantPick);
 		message.append("Синергия героев сил света " + synergyRadiantRelationDire + "\n");
 		message.append("Синергия героев сил тьмы " + synergyDireRelationRadiant + "\n");
 		if(synergyRadiantRelationDire > synergyDireRelationRadiant)
@@ -113,7 +116,7 @@ public class DraftGame implements Game<HeroStatistics>
 			
 	}
 	
-	public double getRatioSynergy(List<HeroStatistics> first, List<HeroStatistics> second)
+	public double getRelativeSynergy(List<HeroStatistics> first, List<HeroStatistics> second)
 	{
 		double synergy = 0.0;
 		for(HeroStatistics firstListHero : first)

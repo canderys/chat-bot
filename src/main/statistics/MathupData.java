@@ -56,7 +56,8 @@ public class MathupData implements Statistic
 		{
 			int id = hero.getId();
 			String link = String.format("https://api.stratz.com/api/v1/Hero/%d/matchUp",id);
-			stats.add(StatisticsLoader.GetStatisticsByLink(link));
+			StatisticsLoader loader = new StatisticsLoader(link);
+			stats.add(loader.downloadStatistics());
 		}
 		return stats;
 	}

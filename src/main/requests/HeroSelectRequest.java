@@ -12,7 +12,7 @@ public class HeroSelectRequest implements Request {
 		heroSide = side;
 	}
 	
-	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
+	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
 	{
 		if (processor.addHeroToTeam(heroSide, splittedRequest))
 			return new RequestResult("Вы успешно выбрали героя", RequestType.HEROSELECT);

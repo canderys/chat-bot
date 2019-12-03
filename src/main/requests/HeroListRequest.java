@@ -6,7 +6,7 @@ import java.util.Collections;
 import main.statistics.HeroStatistics;
 
 public class HeroListRequest implements Request {
-	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
+	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
 	{
 		String result = "";
 		List<String> heroes = new ArrayList<String>();
@@ -14,11 +14,11 @@ public class HeroListRequest implements Request {
 			heroes.add(stat.get(i).getName());
 		Collections.sort(heroes);
 		for (int i = 0; i < heroes.size(); ++i)
-			result = result + MakeFinalName(heroes.get(i)) + "\n";
+			result = result + makeFinalName(heroes.get(i)) + "\n";
 		return new RequestResult(result, RequestType.HEROES);
 	}
 	
-	private String MakeFinalName(String name)
+	private String makeFinalName(String name)
 	{
 		String[] splitted = name.split(" ");
 		String result = "";

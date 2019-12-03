@@ -7,7 +7,7 @@ import java.util.Collections;
 import main.statistics.HeroStatistics;
 
 public class HelpRequest implements Request {
-	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
+	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
 	{
 		return new RequestResult("Ѕот умеет показывать различные статистики дл€ героев игры Dota 2. —татистика основываетс€ на данных сайта stratz.com \n"
 				+ "Ѕот имеет следующие команды:\n"

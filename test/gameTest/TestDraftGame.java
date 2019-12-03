@@ -1,4 +1,4 @@
-package GameTest;
+package gameTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -35,8 +35,10 @@ class TestDraftGame {
 	void test() {
 		String firstAction = draftGame.getState();
 		assertEquals("Сейчас вы должны запретить героя" + "\n" , firstAction);
-		for(int i = 0;i < 22;i++) {
+		int i = 0;
+		while(!draftGame.isEnd()) {
 			draftGame.setState(heroStat.get(i));
+			i++;
 			String action = draftGame.getState();
 		}
 		String action = draftGame.getState();

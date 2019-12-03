@@ -1,6 +1,9 @@
 package main.statistics;
 
 import java.lang.reflect.Field;
+import java.util.List;
+
+import main.console.Console;
 
 
 public class HeroStatistics {
@@ -13,7 +16,14 @@ public class HeroStatistics {
 	private HeroesDryadData advantage;
 	private HeroesDryadData disadvantage;
 	
-	
+	public HeroStatistics findHeroStatisticsWithName(String name, List<HeroStatistics> heroStats)
+	{
+		for (int i = 0; i < heroStats.size(); ++i) {
+			if (heroStats.get(i).getName().equalsIgnoreCase(name))
+				return heroStats.get(i);
+		}
+		return null;
+	}
 	public int getAllGames()
 	{
 		return this.allGames;

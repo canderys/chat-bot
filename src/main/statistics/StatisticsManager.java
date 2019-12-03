@@ -51,6 +51,11 @@ public class StatisticsManager implements StatisticsGetter
 		this.statFileName = "stat.txt";
 		this.dateFileName = "data.txt";
 	}
+	public StatisticsManager(String statFile)
+	{
+		this.statFileName = statFile;
+		this.dateFileName = "data.txt";
+	}
 	
 	public List<HeroStatistics> createStatisticsFiles()
 	{

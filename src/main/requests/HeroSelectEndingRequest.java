@@ -4,7 +4,7 @@ import java.util.List;
 import main.statistics.HeroStatistics;
 
 public class HeroSelectEndingRequest implements Request {
-	public RequestResult GetRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
+	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
 	{
 		RequestResult result = new RequestResult(processor.findBestHeroes(), RequestType.HEROADVICERESULT);
 		processor.clearTeams();
