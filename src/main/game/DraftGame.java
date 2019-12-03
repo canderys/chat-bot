@@ -21,6 +21,7 @@ public class DraftGame implements Game<HeroStatistics>
 	private Action lastAction = null;
 	private Action nextAction = null;
 	private HeroStatistics lastHero = null;
+	private Side currentPlayer = Side.Radiant;
 	
 	public DraftGame(List<HeroStatistics> heroes)
 	{
@@ -139,6 +140,7 @@ public class DraftGame implements Game<HeroStatistics>
 		if(!availableHeroes.contains(message.getName()))
 			return false;
 		PickInfo currentAction = pickBanSequense.get(phase);
+		currentPlayer = currentAction.getSide();
 		phase++;
 		lastAction  = currentAction.getAction();
 		if(phase < pickBanSequense.size())
@@ -155,5 +157,9 @@ public class DraftGame implements Game<HeroStatistics>
 	
 	public boolean isEnd() {
 		return !(phase < pickBanSequense.size());
+	}
+	
+	public int getTurn() {
+		return (currentPlayer == Side.Radiant) ? 0 : 1;
 	}
 }

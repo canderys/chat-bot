@@ -33,13 +33,12 @@ class TestDraftGame {
 
 	@Test
 	void test() {
-		String firstAction = draftGame.getState();
-		assertEquals("Сейчас вы должны запретить героя" + "\n" , firstAction);
 		int i = 0;
 		while(!draftGame.isEnd()) {
-			draftGame.setState(heroStat.get(i));
-			i++;
 			String action = draftGame.getState();
+			draftGame.setState(heroStat.get(i));
+			i++;	
+			draftGame.getTurn();
 		}
 		String action = draftGame.getState();
 	}
