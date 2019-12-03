@@ -26,8 +26,9 @@ import main.console.Console;
 
 public class StatisticsManager implements StatisticsGetter
 {
-	private String statFileName;
-	private String dateFileName;
+	private String statFileName = null;
+	private String dateFileName = null;
+	private boolean isIgnoreData = false;
 	
 	public String getStatFileName()
 	{
@@ -54,7 +55,7 @@ public class StatisticsManager implements StatisticsGetter
 	public StatisticsManager(String statFile)
 	{
 		this.statFileName = statFile;
-		this.dateFileName = "data.txt";
+		isIgnoreData = true;
 	}
 	
 	public List<HeroStatistics> createStatisticsFiles()
@@ -121,6 +122,8 @@ public class StatisticsManager implements StatisticsGetter
 	}
 	public boolean isGetStatInFile()
 	{
+		if(isIgnoreData)
+			return true;
 		String date = getFileString(this.dateFileName);
 		if(date == null)
 			return false;
