@@ -24,23 +24,22 @@ class TestDraftGame {
 		StatisticsGetter statGetter = new StatisticsManager();
 		heroStat =  statGetter.getFullStat();
 		draftGame = new DraftGame(heroStat);
-		StringBuilder expectedGreetings = new StringBuilder();
-		expectedGreetings.append("В этой игре нужно выбирать и запрещать героев для команды сил тьмы и сил света" + "\n");
-		expectedGreetings.append("Чтобы выбрать или запретить героя просто напишите его имя" + "\n");
-		String greetings = draftGame.getState();
-		assertEquals(greetings, expectedGreetings.toString());
 	}
 
 	@Test
 	void test() {
 		int i = 0;
 		while(!draftGame.isEnd()) {
-			String action = draftGame.getState();
+			String actionFirst = draftGame.getState(0);
+			String actionSecond = draftGame.getState(1);
+			Console.Print(i);
 			draftGame.setState(heroStat.get(i));
-			i++;	
-			draftGame.getTurn();
+			i++;
+			Console.Print("first" + actionFirst + "\n");
+			Console.Print("second" + actionSecond + "\n");
 		}
-		String action = draftGame.getState();
+		String end = draftGame.getState(0);
+		Console.Print(end);
 	}
 
 }

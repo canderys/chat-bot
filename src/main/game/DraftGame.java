@@ -16,12 +16,12 @@ public class DraftGame implements Game<HeroStatistics>
 	private HashSet<String> availableHeroes = new HashSet<String>();
 	private List<HeroStatistics> direPick = new ArrayList<HeroStatistics>();
 	private List<HeroStatistics> radiantPick = new ArrayList<HeroStatistics>();
+	private List<HeroStatistics> banedHeroes = new ArrayList<HeroStatistics>();
 	private int phase = 0;
-	private boolean isBeginGame = true;
-	private Action lastAction = null;
-	private Action nextAction = null;
+	private Action currentAction = null;
+	private Action previousAction = null;
 	private HeroStatistics lastHero = null;
-	private Side currentPlayer = Side.Radiant;
+	private Side currentPlayer = null;
 	
 	public DraftGame(List<HeroStatistics> heroes)
 	{
@@ -56,7 +56,8 @@ public class DraftGame implements Game<HeroStatistics>
 		pickBanSequense.add(new PickInfo(Side.Radiant,Action.Ban));
 		pickBanSequense.add(new PickInfo(Side.Radiant,Action.Pick));
 		pickBanSequense.add(new PickInfo(Side.Dire,Action.Pick));
-		nextAction = pickBanSequense.get(0).getAction();
+		currentAction = pickBanSequense.get(0).getAction();
+		currentPlayer = pickBanSequense.get(0).getSide();
 	}
 	
 	public void pick(Side side, HeroStatistics heroStat)
@@ -72,27 +73,39 @@ public class DraftGame implements Game<HeroStatistics>
 	public void ban(HeroStatistics heroStat)
 	{
 		availableHeroes.remove(heroStat);
+		banedHeroes.add(heroStat);
 	}
 	
 
 
-	public String getState() {
+	public String getState(int id) {
+		Side curSide = (id == 0) ? Side.Radiant : Side.Dire;
 		StringBuilder message = new StringBuilder();
-		if(isBeginGame)
-		{
-			message.append("В этой игре нужно выбирать и запрещать героев для команды сил тьмы и сил света" + "\n");
-			message.append("Чтобы выбрать или запретить героя просто напишите его имя" + "\n");
-			isBeginGame = false;
-			return message.toString();
-		}
 		if(!isEnd()) {
-			if(lastAction != null) {
-				String action = (lastAction == Action.Pick) ? "выбран" : "запрещен";
-				message.append(String.format("Герой %s %s" + "\n",lastHero.getName(), action));
+			message.append("Герои сил света: ");
+			for(HeroStatistics hero : radiantPick)
+				message.append(hero.getName() + " ");
+			message.append("\n");
+			message.append("Герои сил тьмы : ");
+			for(HeroStatistics hero : direPick)
+				message.append(hero.getName() + " ");
+			message.append("\n");
+			message.append("Запрещенные герои: ");
+			for(HeroStatistics hero : banedHeroes)
+				message.append(hero.getName() + " ");
+			message.append("\n");
+			if(previousAction != null) {
+				String action = (previousAction == Action.Pick) ? "выбран" : "запрещен";
+				message.append(String.format("Герой %s %s" + "\n", action, lastHero.getName()));
 			}
-			if(nextAction != null) {
-				String action = (nextAction == Action.Pick) ? "выбрать" : "запретить";
-				message.append(String.format("Сейчас вы должны %s героя" + "\n", action));
+			if(currentAction != null) {
+				String action = (currentAction == Action.Pick) ? "выбирают" : "запрещают";
+				String side = (currentPlayer == Side.Radiant) ? "света" : "тьмы";
+				message.append(String.format("Силы %s %s героя" + "\n",side, action));
+				if(currentPlayer.equals(curSide))
+					message.append("Ваш ход \n");
+				else
+					message.append("Ожидайте хода соперника \n");
 			}
 			return message.toString();
 		}
@@ -116,41 +129,21 @@ public class DraftGame implements Game<HeroStatistics>
 		return message.toString();
 			
 	}
-	
-	public double getRelativeSynergy(List<HeroStatistics> first, List<HeroStatistics> second)
-	{
-		double synergy = 0.0;
-		for(HeroStatistics firstListHero : first)
-		{
-			for (HeroStatistics anotherHero: first)
-			{
-				synergy += firstListHero.getSynergyByHeroWith(anotherHero.getId());
-			}
-			
-			for (HeroStatistics anotherHero: second)
-			{
-				synergy += firstListHero.getSynergyByHeroVs(anotherHero.getId());
-			}
-		}
-		return synergy;
-	}
 
 	public boolean setState(HeroStatistics message) {
 		lastHero = message;
 		if(!availableHeroes.contains(message.getName()))
 			return false;
-		PickInfo currentAction = pickBanSequense.get(phase);
-		currentPlayer = currentAction.getSide();
-		phase++;
-		lastAction  = currentAction.getAction();
-		if(phase < pickBanSequense.size())
-			nextAction = pickBanSequense.get(phase).getAction();
-		else
-			nextAction = null;
-		if(currentAction.getAction() == Action.Pick)
-			pick(currentAction.getSide(), message);
+		if(currentAction == Action.Pick)
+			pick(currentPlayer, message);
 		else
 			ban(message);
+		previousAction = currentAction;
+		phase++;
+		if(!isEnd()) {
+			currentAction = pickBanSequense.get(phase).getAction();
+			currentPlayer = pickBanSequense.get(phase).getSide();
+		}
 		return true;
 		
 	}
