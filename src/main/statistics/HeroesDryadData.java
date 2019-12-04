@@ -5,9 +5,9 @@ import java.util.List;
 
 public class HeroesDryadData {
 	private List<PairHeroesData> with;
-	public int matchCountWith;
+	private int matchCountWith;
 	private List<PairHeroesData> vs;
-	public int matchCountVs;
+	private int matchCountVs;
 
 	public List<PairHeroesData> getSynergyListWith()
 	{

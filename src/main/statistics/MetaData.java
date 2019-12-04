@@ -1,7 +1,6 @@
 package main.statistics;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -10,8 +9,8 @@ import com.google.gson.Gson;
 
 public class MetaData implements Statistic
 {
-	public List<Integer> win;
-	public List<Integer> pick;
+	private List<Integer> win;
+	private List<Integer> pick;
 	
 	private int sumIntegers(List<Integer> list)
 	{

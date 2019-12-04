@@ -1,0 +1,267 @@
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: 
+Силы света запрещают героя
+Ваш ход 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: 
+Силы света запрещают героя
+Ожидайте хода соперника 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage 
+Герой запрещен anti-mage
+Силы тьмы запрещают героя
+Ожидайте хода соперника 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage 
+Герой запрещен anti-mage
+Силы тьмы запрещают героя
+Ваш ход 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe 
+Герой запрещен axe
+Силы света запрещают героя
+Ваш ход 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe 
+Герой запрещен axe
+Силы света запрещают героя
+Ожидайте хода соперника 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe bane 
+Герой запрещен bane
+Силы тьмы запрещают героя
+Ожидайте хода соперника 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe bane 
+Герой запрещен bane
+Силы тьмы запрещают героя
+Ваш ход 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe bane bloodseeker 
+Герой запрещен bloodseeker
+Силы света запрещают героя
+Ваш ход 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe bane bloodseeker 
+Герой запрещен bloodseeker
+Силы света запрещают героя
+Ожидайте хода соперника 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden 
+Герой запрещен crystal maiden
+Силы тьмы запрещают героя
+Ожидайте хода соперника 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden 
+Герой запрещен crystal maiden
+Силы тьмы запрещают героя
+Ваш ход 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
+Герой запрещен drow ranger
+Силы света выбирают героя
+Ваш ход 
+Герои сил света: 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
+Герой запрещен drow ranger
+Силы света выбирают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
+Герой выбран earthshaker
+Силы тьмы выбирают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker 
+Герои сил тьмы : 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
+Герой выбран earthshaker
+Силы тьмы выбирают героя
+Ваш ход 
+Герои сил света: earthshaker 
+Герои сил тьмы : juggernaut 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
+Герой выбран juggernaut
+Силы тьмы выбирают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker 
+Герои сил тьмы : juggernaut 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
+Герой выбран juggernaut
+Силы тьмы выбирают героя
+Ваш ход 
+Герои сил света: earthshaker 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
+Герой выбран mirana
+Силы света выбирают героя
+Ваш ход 
+Герои сил света: earthshaker 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
+Герой выбран mirana
+Силы света выбирают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
+Герой выбран morphling
+Силы света запрещают героя
+Ваш ход 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
+Герой выбран morphling
+Силы света запрещают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend 
+Герой запрещен shadow fiend
+Силы тьмы запрещают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend 
+Герой запрещен shadow fiend
+Силы тьмы запрещают героя
+Ваш ход 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer 
+Герой запрещен phantom lancer
+Силы света запрещают героя
+Ваш ход 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer 
+Герой запрещен phantom lancer
+Силы света запрещают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck 
+Герой запрещен puck
+Силы тьмы запрещают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck 
+Герой запрещен puck
+Силы тьмы запрещают героя
+Ваш ход 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
+Герой запрещен pudge
+Силы тьмы выбирают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
+Герой запрещен pudge
+Силы тьмы выбирают героя
+Ваш ход 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana razor 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
+Герой выбран razor
+Силы света выбирают героя
+Ваш ход 
+Герои сил света: earthshaker morphling 
+Герои сил тьмы : juggernaut mirana razor 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
+Герой выбран razor
+Силы света выбирают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling sand king 
+Герои сил тьмы : juggernaut mirana razor 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
+Герой выбран sand king
+Силы тьмы выбирают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling sand king 
+Герои сил тьмы : juggernaut mirana razor 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
+Герой выбран sand king
+Силы тьмы выбирают героя
+Ваш ход 
+Герои сил света: earthshaker morphling sand king 
+Герои сил тьмы : juggernaut mirana razor storm spirit 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
+Герой выбран storm spirit
+Силы света выбирают героя
+Ваш ход 
+Герои сил света: earthshaker morphling sand king 
+Герои сил тьмы : juggernaut mirana razor storm spirit 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
+Герой выбран storm spirit
+Силы света выбирают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling sand king sven 
+Герои сил тьмы : juggernaut mirana razor storm spirit 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
+Герой выбран sven
+Силы тьмы запрещают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling sand king sven 
+Герои сил тьмы : juggernaut mirana razor storm spirit 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
+Герой выбран sven
+Силы тьмы запрещают героя
+Ваш ход 
+Герои сил света: earthshaker morphling sand king sven 
+Герои сил тьмы : juggernaut mirana razor storm spirit 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny 
+Герой запрещен tiny
+Силы света запрещают героя
+Ваш ход 
+Герои сил света: earthshaker morphling sand king sven 
+Герои сил тьмы : juggernaut mirana razor storm spirit 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny 
+Герой запрещен tiny
+Силы света запрещают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling sand king sven 
+Герои сил тьмы : juggernaut mirana razor storm spirit 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny vengeful spirit 
+Герой запрещен vengeful spirit
+Силы света выбирают героя
+Ваш ход 
+Герои сил света: earthshaker morphling sand king sven 
+Герои сил тьмы : juggernaut mirana razor storm spirit 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny vengeful spirit 
+Герой запрещен vengeful spirit
+Силы света выбирают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling sand king sven windranger 
+Герои сил тьмы : juggernaut mirana razor storm spirit 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny vengeful spirit 
+Герой выбран windranger
+Силы тьмы выбирают героя
+Ожидайте хода соперника 
+Герои сил света: earthshaker morphling sand king sven windranger 
+Герои сил тьмы : juggernaut mirana razor storm spirit 
+Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny vengeful spirit 
+Герой выбран windranger
+Силы тьмы выбирают героя
+Ваш ход 
+Герои сил света: earthshaker morphling sand king sven windranger 
+Герои сил тьмы : juggernaut mirana razor storm spirit zeus 
+Синергия героев сил света 12.681584454172395
+Синергия героев сил тьмы -1.7281126403626725
+Вероятность победы сил света выше

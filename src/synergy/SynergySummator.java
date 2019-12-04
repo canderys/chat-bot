@@ -2,8 +2,6 @@ package synergy;
 
 import java.util.HashSet;
 import java.util.List;
-
-import main.console.Console;
 import main.game.Side;
 import main.statistics.HeroStatistics;
 

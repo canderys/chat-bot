@@ -1,25 +1,15 @@
 package main.statistics;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.reflect.Type;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
 import java.nio.file.Files;
-import java.nio.file.Path;
-
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
-import java.util.Scanner;
 
 import main.console.Console;
 
@@ -70,7 +60,7 @@ public class StatisticsManager implements StatisticsGetter
 		boolean correctWriteStat = writeFile(statFileName, serializedStatistics);
 		boolean correctWriteDate = writeFile(dateFileName, date);
 		if(!(correctWriteStat && correctWriteDate))
-			Console.Print("cant create statistics files");
+			Console.print("cant create statistics files");
 		return parsedStat;
 	}
 	public List<HeroStatistics> createStatisticsFiles(String statName, String dateName, List<Statistic> stats)
@@ -85,7 +75,7 @@ public class StatisticsManager implements StatisticsGetter
 		boolean correctWriteStat = writeFile(statName, serializedStatistics);
 		boolean correctWriteDate = writeFile(dateName, date);
 		if(!(correctWriteStat && correctWriteDate))
-			Console.Print("cant create statistics files");
+			Console.print("cant create statistics files");
 		return parsedStat;
 	}
 	
@@ -136,12 +126,15 @@ public class StatisticsManager implements StatisticsGetter
 	}
 	public List<HeroStatistics> getFullStat()
 	{
+		List<HeroStatistics> stat = null;
 		if(isGetStatInFile())
-			return getFullStatInFile();
+			stat =  getFullStatInFile();
 		else {
-			return createStatisticsFiles();
+			stat =  createStatisticsFiles();
 		}
-		
+		Comparator<HeroStatistics> comparator = (o1, o2) -> o1.getName().compareTo(o2.getName());
+		stat.sort(comparator);	
+		return stat;
 	}
 	/*public static void main(String[] args)
 	{

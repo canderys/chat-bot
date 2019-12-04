@@ -1,10 +1,6 @@
 package main.statistics;
 
-import java.lang.reflect.Field;
 import java.util.List;
-
-import main.console.Console;
-
 
 public class HeroStatistics {
 	private HeroData heroData;

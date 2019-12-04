@@ -1,15 +1,10 @@
 package synergyTest;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import main.console.Console;
 import main.game.Side;
 import main.statistics.HeroStatistics;
 import main.statistics.StatisticsGetter;

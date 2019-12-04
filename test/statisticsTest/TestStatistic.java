@@ -1,7 +1,6 @@
 package statisticsTest;
 
 import java.util.List;
-
 import main.statistics.HeroStatistics;
 import main.statistics.Statistic;
 

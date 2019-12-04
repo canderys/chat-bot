@@ -1,13 +1,10 @@
 package statisticsTest;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import main.statistics.HeroStatistics;
 import main.statistics.StatisticsManager;
 

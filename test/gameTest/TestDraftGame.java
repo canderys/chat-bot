@@ -1,11 +1,10 @@
 package gameTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.ArrayList;
 import java.util.List;
-
-import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -19,9 +18,10 @@ import main.statistics.StatisticsManager;
 class TestDraftGame {
 	private Game<HeroStatistics> draftGame;
 	private List<HeroStatistics> heroStat;
+	StatisticsManager statGetter;
 	@BeforeEach
 	void setUp() throws Exception {
-		StatisticsGetter statGetter = new StatisticsManager();
+		statGetter = new StatisticsManager();
 		heroStat =  statGetter.getFullStat();
 		draftGame = new DraftGame(heroStat);
 	}
@@ -29,13 +29,21 @@ class TestDraftGame {
 	@Test
 	void test() {
 		int i = 0;
+		StringBuilder message = new StringBuilder();
 		while(!draftGame.isEnd()) {
-			String actionFirst = draftGame.getState(0);
-			String actionSecond = draftGame.getState(1);
+			message.append(draftGame.getState(0));
+			message.append(draftGame.getState(1));
 			draftGame.setState(heroStat.get(i));
 			i++;
 		}
-		String end = draftGame.getState(0);
+		message.append(draftGame.getState(0));
+		String stringMessage = message.toString();
+		String expected = statGetter.getFileString(".\\test\\gameTest\\dataTestDraftGame.txt");
+		for(int y = 0; y < stringMessage.length();y++)
+		{
+			assertEquals(expected.charAt(y), stringMessage.charAt(y));
+		}
+				
+			
 	}
-
 }

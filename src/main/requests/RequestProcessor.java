@@ -1,11 +1,8 @@
 package main.requests;
 
 import java.util.Map;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.HashMap;
-
-import main.console.Console;
 import main.game.Side;
 import main.statistics.HeroStatistics;
 import synergy.SynergyCalculator;

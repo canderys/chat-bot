@@ -1,19 +1,13 @@
 package statisticsTest;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-import java.io.Console;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import main.statistics.HeroData;
 import main.statistics.HeroStatistics;
 import main.statistics.MathupData;
 import main.statistics.MetaData;
-import main.statistics.StatisticsLoader;
 
 class StatisticsClassesTest {
 	@Test

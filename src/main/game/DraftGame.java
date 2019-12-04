@@ -12,7 +12,6 @@ public class DraftGame implements Game<HeroStatistics>
 {
 	
 	private List<PickInfo> pickBanSequense = new ArrayList<PickInfo>();
-	private List<HeroStatistics> heroes = new ArrayList<HeroStatistics>();
 	private HashSet<String> availableHeroes = new HashSet<String>();
 	private List<HeroStatistics> direPick = new ArrayList<HeroStatistics>();
 	private List<HeroStatistics> radiantPick = new ArrayList<HeroStatistics>();
@@ -25,7 +24,6 @@ public class DraftGame implements Game<HeroStatistics>
 	
 	public DraftGame(List<HeroStatistics> heroes)
 	{
-		this.heroes = heroes;
 		fillPickBanSequense();
 		for(HeroStatistics hero : heroes)
 		{

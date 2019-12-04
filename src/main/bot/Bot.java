@@ -38,7 +38,7 @@ public class Bot extends TelegramLongPollingBot {
 		StatisticsManager statManager = new StatisticsManager();
 		fullStat = statManager.getFullStat();
 		requestProcessor = new RequestProcessor(fullStat);
-		Console.Print("Bot is ready");
+		Console.print("Bot is ready");
 	}
 	
 	@Override
@@ -151,7 +151,7 @@ public class Bot extends TelegramLongPollingBot {
 	private void sendStatistics(Message msg, String text)
 	{
 		SendPhoto photo = new SendPhoto();
-		Console.Print(text);
+		Console.print(text);
 		String heroName = text.substring(0, text.indexOf(" \n")).replace("-", "").replace(' ', '_').toLowerCase();
 		switch (heroName)
 		{
