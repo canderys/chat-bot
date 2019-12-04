@@ -32,14 +32,10 @@ class TestDraftGame {
 		while(!draftGame.isEnd()) {
 			String actionFirst = draftGame.getState(0);
 			String actionSecond = draftGame.getState(1);
-			Console.Print(i);
 			draftGame.setState(heroStat.get(i));
 			i++;
-			Console.Print("first" + actionFirst + "\n");
-			Console.Print("second" + actionSecond + "\n");
 		}
 		String end = draftGame.getState(0);
-		Console.Print(end);
 	}
 
 }
