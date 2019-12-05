@@ -9,7 +9,7 @@ public class DraftGameRequest implements Request {
 			RequestProcessor processor, long chatId)
 	{
 		if (!processor.addUserToGameQueue(chatId))
-			return new RequestResult("Èùåì ñîïåðíèêà...\nÄëÿ âûõîäà â ìåíþ íàæìèòå êíîïêó Âûéòè", RequestType.USERINQUEUE, chatId);
-		return new RequestResult("Ñîïåðíèê íàéäåí", RequestType.USERINQUEUE, chatId);
+			return new RequestResult("Поиск соперника...\nДля выхода в меню нажмите кнопку выйти", RequestType.USERINQUEUE, chatId);
+		return new RequestResult("Вы нашли игру", RequestType.USERINQUEUE, chatId);
 	}
 }

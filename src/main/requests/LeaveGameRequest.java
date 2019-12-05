@@ -12,6 +12,6 @@ public class LeaveGameRequest implements Request {
 			processor.clearGameQueue();
 		if (processor.gameExists(chatId))
 			processor.endGame(chatId);
-		return new RequestResult("Âû ïîêèíóëè èãðó", RequestType.USERLEAVEQUEUE, chatId);
+		return new RequestResult("Вы покинули игру", RequestType.USERLEAVEQUEUE, chatId);
 	}
 }

@@ -9,9 +9,9 @@ public class AllStatRequest implements Request {
 	{
 		String result = "";
 		for (int i = 0; i < stat.size(); ++i)
-			result += "¹" + (i + 1) + ".\nÈìÿ ãåðîÿ: " + stat.get(i).getName() + "\nÂèíðåéò: " + 
+			result += "ï¿½" + (i + 1) + ".\nÐ˜Ð¼Ñ Ð³ÐµÑ€Ð¾Ñ: " + stat.get(i).getName() + "\nÐ’Ð¸Ð½Ñ€ÐµÐ¹Ñ‚: " + 
 					Math.round(stat.get(i).getWinRate() * 100.0) / 100.0 +
-						"%\nÏðîöåíò âûáîðà: " + Math.round(stat.get(i).getPickRate() * 100.0) / 100.0 + "%\n\n";
+						"%\nÐŸÑ€Ð¾Ñ†ÐµÐ½Ñ‚ Ð²Ñ‹Ð±Ð¾Ñ€Ð°: " + Math.round(stat.get(i).getPickRate() * 100.0) / 100.0 + "%\n\n";
 		return new RequestResult(result, RequestType.GETHEROLIST, chatId);
 	}
 }

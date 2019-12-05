@@ -7,6 +7,6 @@ public class HeroAdviceRequest implements Request {
 	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat,
 			RequestProcessor processor, long chatId)
 	{	
-		return new RequestResult("Выберите героев и найдите героя, которые лучше всего сочетается с ними.", RequestType.HEROADVICE, chatId);
+		return new RequestResult("Р’С‹Р±РµСЂРёС‚Рµ РіРµСЂРѕРµРІ Рё РЅР°Р№РґРёС‚Рµ РіРµСЂРѕСЏ, РєРѕС‚РѕСЂС‹Р№ Р»СѓС‡С€Рµ РІСЃРµРіРѕ СЃРѕС‡РµС‚Р°РµС‚СЃСЏ СЃ РЅРёРјРё.", RequestType.HEROADVICE, chatId);
 	}
 }

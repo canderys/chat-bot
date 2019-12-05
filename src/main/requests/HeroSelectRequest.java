@@ -16,7 +16,7 @@ public class HeroSelectRequest implements Request {
 			RequestProcessor processor, long chatId)
 	{
 		if (processor.addHeroToTeam(heroSide, splittedRequest, chatId))
-			return new RequestResult("Вы успешно выбрали героя", RequestType.HEROSELECT, chatId);
-		return new RequestResult("Такого героя не существует", RequestType.SELECTERROR, chatId);
+			return new RequestResult("Р’С‹ СѓСЃРїРµС€РЅРѕ РІС‹Р±СЂР°Р»Рё РіРµСЂРѕСЏ", RequestType.HEROSELECT, chatId);
+		return new RequestResult("РўР°РєРѕРіРѕ РіРµСЂРѕСЏ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚", RequestType.SELECTERROR, chatId);
 	}
 }

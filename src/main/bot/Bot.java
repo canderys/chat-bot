@@ -35,7 +35,7 @@ public class Bot extends TelegramLongPollingBot {
 	private HashSet<Long> direUsers = new HashSet<Long>();
 	
 	private Map<Long, Integer> usersStatuses = new HashMap<Long, Integer>();
-	//Статусы: 0 - обычное взаимодейтсвие с ботом, 1 - игра, 2 - подсказка по пику, 3 - показать статистику
+	//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 0 - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ, 1 - пїЅпїЅпїЅпїЅ, 2 - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ, 3 - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	
 	public Bot()
 	{
@@ -76,7 +76,7 @@ public class Bot extends TelegramLongPollingBot {
 		if (!usersStatuses.containsKey(id))
 		{
 			usersStatuses.put(id, 0);
-			sendDefaultReplyKeyboard(id, "Главное меню");
+			sendDefaultReplyKeyboard(id, "Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ");
 		}
 		if (request.getRequestType() == RequestType.HEROES)
 		{
@@ -102,8 +102,8 @@ public class Bot extends TelegramLongPollingBot {
 					sendMessageWithId(anotherId, requestProcessor.getGameState(anotherId));
 					break;
 				case USERLEAVEQUEUE:
-					sendDefaultReplyKeyboard(id, "Один из игроков вышел, игра закончена");
-					sendDefaultReplyKeyboard(anotherId, "Один из игроков вышел, игра закончена");
+					sendDefaultReplyKeyboard(id, "РћРґРёРЅ РёР· РёРіСЂРѕРєРѕРІ РІС‹С€РµР», РёРіСЂР° Р·Р°РєРѕРЅС‡РµРЅР°");
+					sendDefaultReplyKeyboard(anotherId, "РћРґРёРЅ РёР· РёРіСЂРѕРєРѕРІ РІС‹С€РµР», РёРіСЂР° Р·Р°РєРѕРЅС‡РµРЅР°");
 					usersInGame.remove(id);
 					usersInGame.remove(anotherId);
 					
@@ -113,7 +113,7 @@ public class Bot extends TelegramLongPollingBot {
 					direUsers.remove(requestProcessor.getAnotherPlayer(id));
 					break;
 				default:
-					sendMessageWithId(id, "Неверная команда");
+					sendMessageWithId(id, "РќРµРІРµСЂРЅР°СЏ РєРѕРјР°РЅРґР°");
 					break;
 			}
 			if (requestProcessor.gameIsOver(id))
@@ -134,7 +134,7 @@ public class Bot extends TelegramLongPollingBot {
 					break;
 				case GETHEROSTAT:
 					sendStatistics(id, request.getRequestText());
-					sendDefaultReplyKeyboard(id, "Главное меню");
+					sendDefaultReplyKeyboard(id, "Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ");
 					break;
 				case GETHEROLIST:
 					sendStatisticsChoice(id);
@@ -143,10 +143,10 @@ public class Bot extends TelegramLongPollingBot {
 					sendAdvice(id);
 					break;
 				case USERLEAVEQUEUE:
-					sendDefaultReplyKeyboard(id, "Главное меню");
+					sendDefaultReplyKeyboard(id, "Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ");
 					break;
 				default:
-					sendTextMessage(id, "Неизвестная команда");
+					sendTextMessage(id, "РќРµРёР·РІРµСЃС‚РЅР°СЏ РєРѕРјР°РЅРґР°");
 			}
 		else
 			switch (request.getRequestType())
@@ -159,13 +159,13 @@ public class Bot extends TelegramLongPollingBot {
 					break;
 				case HEROADVICERESULT:
 					sendHeroAdviceResult(id, request.getRequestText());
-					sendDefaultReplyKeyboard(id, "Главное меню");
+					sendDefaultReplyKeyboard(id, "Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ");
 					break;
 				case SELECTERROR:
 					sendTextMessage(id, request.getRequestText());
 					break;
 				default:
-					sendTextMessage(id, "Неизвестная команда.\nВы находитесь в режиме выбора героев. Пожалуйста, выберите героя или закончите выбор, нажав <b>результат</b>");
+					sendTextMessage(id, "РќРµРёР·РІРµСЃС‚РЅР°СЏ РєРѕРјР°РЅРґР°.\nР’С‹ РЅР°С…РѕРґРёС‚РµСЃСЊ РІ СЂРµР¶РёРјРµ РІС‹Р±РѕСЂР° РіРµСЂРѕРµРІ. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІС‹Р±РµСЂРёС‚Рµ РіРµСЂРѕРµРІ РёР»Рё Р·Р°РєРѕРЅС‡РёС‚Рµ РІС‹Р±РѕСЂ, РЅР°Р¶Р°РІ <b>СЂРµР·СѓР»СЊС‚Р°С‚</b>");
 					break;
 			}
 	}
@@ -179,7 +179,7 @@ public class Bot extends TelegramLongPollingBot {
 	
 	private void sendHeroSelect(long id)
 	{
-		sendTextMessage(id, "Герой успешно добавлен. Продолжайте добавлять героев или закончите выбор, нажав <b>результат</b>");
+		sendTextMessage(id, "Р“РµСЂРѕР№ СѓСЃРїРµС€РЅРѕ РґРѕР±Р°РІР»РµРЅ. РџСЂРѕРґРѕР»Р¶Р°Р№С‚Рµ РґРѕР±Р°РІР»СЏС‚СЊ РіРµСЂРѕРµРІ РёР»Рё Р·Р°РєРѕРЅС‡РёС‚Рµ РІС‹Р±РѕСЂ, РЅР°Р¶Р°РІ  <b>СЂРµР·СѓР»СЊС‚Р°С‚</b>");
 	}
 	
 	private void sendStatisticsChoice(long id)
@@ -192,7 +192,7 @@ public class Bot extends TelegramLongPollingBot {
 	{
 		SendMessage message = new SendMessage();
 		message.setChatId(id);
-		message.setText("Выберите героя из списка");
+		message.setText("Р’С‹Р±РµСЂРёС‚Рµ РіРµСЂРѕСЏ РёР· СЃРїРёСЃРєР°");
 		return message;
 	}
 	
@@ -220,11 +220,11 @@ public class Bot extends TelegramLongPollingBot {
 	
 	private void sendHeroesReplyKeyboard(long id)
 	{
-		SendMessage message = createMessage(id, "Выберите героя из списка");
+		SendMessage message = createMessage(id, "Р’С‹Р±РµСЂРёС‚Рµ РіРµСЂРѕСЏ РёР· СЃРїРёСЃРєР°");
 		ReplyKeyboardMarkup keyboard = createBaseKeyboard();
 		List< KeyboardRow > buttons = new ArrayList< KeyboardRow >();
 		buttons.add(new KeyboardRow());
-		buttons.get(0).add(new KeyboardButton().setText("Выйти"));
+		buttons.get(0).add(new KeyboardButton().setText("Р’С‹Р№С‚Рё"));
 		for (int i = 0; i < fullStat.size(); ++i)
 		{
 			if (i % 4 == 0)
@@ -236,7 +236,7 @@ public class Bot extends TelegramLongPollingBot {
 	
 	private void sendHeroesListReplyKeyboard(long id)
 	{
-		SendMessage message = createMessage(id, "Выберите героя из списка");
+		SendMessage message = createMessage(id, "Р’С‹Р±РµСЂРёС‚Рµ РіРµСЂРѕСЏ РёР· СЃРїРёСЃРєР°");
 		ReplyKeyboardMarkup keyboard = createBaseKeyboard();
 		List< KeyboardRow > buttons = new ArrayList< KeyboardRow >();
 		for (int i = 0; i < fullStat.size(); ++i)
@@ -250,51 +250,51 @@ public class Bot extends TelegramLongPollingBot {
 	
 	private void sendDefaultReplyKeyboard(long id, String text)
 	{
-		SendMessage message = createMessage(id, "Главное меню");
+		SendMessage message = createMessage(id, "Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ");
 		ReplyKeyboardMarkup keyboard = createBaseKeyboard();
 		List< KeyboardRow > buttons = new ArrayList< KeyboardRow >();
 		buttons.add(new KeyboardRow());
 		buttons.add(new KeyboardRow());
 		buttons.add(new KeyboardRow());
-		buttons.get(0).add(new KeyboardButton().setText("Помощь"));
-		buttons.get(0).add(new KeyboardButton().setText("Статистика"));
-		buttons.get(1).add(new KeyboardButton().setText("Игра"));
-		buttons.get(1).add(new KeyboardButton().setText("Совет"));
-		buttons.get(2).add(new KeyboardButton().setText("Герои"));
+		buttons.get(0).add(new KeyboardButton().setText("РџРѕРјРѕС‰СЊ"));
+		buttons.get(0).add(new KeyboardButton().setText("РЎС‚Р°С‚РёСЃС‚РёРєР°"));
+		buttons.get(1).add(new KeyboardButton().setText("РРіСЂР°"));
+		buttons.get(1).add(new KeyboardButton().setText("РЎРѕРІРµС‚"));
+		buttons.get(2).add(new KeyboardButton().setText("Р“РµСЂРѕРё"));
 		send(message, keyboard, buttons);
 	}
 	
 	private void sendQueueReplyKeyboard(long id, String text)
 	{
-		SendMessage message = createMessage(id, "Выберите героя из списка");
+		SendMessage message = createMessage(id, "Р’С‹Р±РµСЂРёС‚Рµ РіРµСЂРѕСЏ РёР· СЃРїРёСЃРєР°");
 		ReplyKeyboardMarkup keyboard = createBaseKeyboard();
 		List< KeyboardRow > buttons = new ArrayList< KeyboardRow >();
 		buttons.add(new KeyboardRow());
-		buttons.get(0).add(new KeyboardButton().setText("Выйти"));
+		buttons.get(0).add(new KeyboardButton().setText("Р’С‹Р№С‚Рё"));
 		send(message, keyboard, buttons);
 	}
 	
 	private void sendAdviceReplyKeyboard(long id)
 	{
-		SendMessage message = createMessage(id, "Выберите сторону");
+		SendMessage message = createMessage(id, "Р’С‹Р±РµСЂРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ");
 		ReplyKeyboardMarkup keyboard = createBaseKeyboard();
 		List< KeyboardRow > buttons = new ArrayList< KeyboardRow >();
 		buttons.add(new KeyboardRow());
-		buttons.get(0).add(new KeyboardButton().setText("Свет"));
-		buttons.get(0).add(new KeyboardButton().setText("Тьма"));
+		buttons.get(0).add(new KeyboardButton().setText("РЎРІРµС‚"));
+		buttons.get(0).add(new KeyboardButton().setText("РўСЊРјР°"));
 		send(message, keyboard, buttons);
 	}
 	
 	private void sendHeroSelectReplyKeyboard(long id)
 	{
-		SendMessage message = createMessage(id, "Выберите героя из списка");
+		SendMessage message = createMessage(id, "Р’С‹Р±РµСЂРёС‚Рµ РіРµСЂРѕСЏ РёР· СЃРїРёСЃРєР°");
 		ReplyKeyboardMarkup keyboard = createBaseKeyboard();
 		List< KeyboardRow > buttons = new ArrayList< KeyboardRow >();
 		buttons.add(new KeyboardRow());
-		buttons.get(0).add(new KeyboardButton().setText("Результат"));
+		buttons.get(0).add(new KeyboardButton().setText("Р РµР·СѓР»СЊС‚Р°С‚"));
 		buttons.add(new KeyboardRow());
-		buttons.get(1).add(new KeyboardButton().setText("Свет"));
-		buttons.get(1).add(new KeyboardButton().setText("Тьма"));
+		buttons.get(1).add(new KeyboardButton().setText("РЎРІРµС‚"));
+		buttons.get(1).add(new KeyboardButton().setText("РўСЊРјР°"));
 		for (int i = 0; i < fullStat.size(); ++i)
 		{
 			if (i % 4 == 0)
@@ -309,7 +309,7 @@ public class Bot extends TelegramLongPollingBot {
 		usersStatuses.put(id, 2);
 		sendAdviceReplyKeyboard(id);
 		usersInSelectingModes.add(id);
-		sendTextMessage(id, "Вы вошли в режим выбора героев. Выберите сторону и добавляйте героев для каждой стороны.");
+		sendTextMessage(id, "Р’С‹ РІРѕС€Р»Рё РІ СЂРµР¶РёРІ РІС‹Р±РѕСЂР° РіРµСЂРѕРµРІ.Р’С‹Р±РµСЂРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ Рё РґРѕР±Р°РІР»СЏР№С‚Рµ РіРµСЂРѕРµРІ РґР»СЏ РєР°Р¶РґРѕР№ СЃС‚РѕСЂРѕРЅС‹.");
 	}
 	
 	private void sendStatistics(long id, String text)
@@ -391,8 +391,8 @@ public class Bot extends TelegramLongPollingBot {
 		radiantUsers.add(game.fst);
 		usersInGame.add(game.snd.fst);
 		direUsers.add(game.snd.fst);
-		sendMessageWithId(game.fst, "Вы начали игру. Вам нужно собрать команду лучше, чем противник\n"+game.snd.snd.getState(0));
-		sendMessageWithId(game.snd.fst, "Вы начали игру. Вам нужно собрать команду лучше, чем противник\n"+game.snd.snd.getState(1));
+		sendMessageWithId(game.fst, "Р’С‹ РЅР°С‡Р°Р»Рё РёРіСЂСѓ. Р’Р°Рј РЅСѓР¶РЅРѕ СЃРѕР±СЂР°С‚СЊ РєРѕРјР°РЅРґСѓ Р»СѓС‡С€Рµ, С‡РµРј РїСЂРѕС‚РёРІРЅРёРє\n"+game.snd.snd.getState(0));
+		sendMessageWithId(game.snd.fst, "Р’С‹ РЅР°С‡Р°Р»Рё РёРіСЂСѓ. Р’Р°Рј РЅСѓР¶РЅРѕ СЃРѕР±СЂР°С‚СЊ РєРѕРјР°РЅРґСѓ Р»СѓС‡С€Рµ, С‡РµРј РїСЂРѕС‚РёРІРЅРёРє\n"+game.snd.snd.getState(1));
 		
 		sendHeroesReplyKeyboard(game.fst);
 		sendHeroesReplyKeyboard(game.snd.fst);
@@ -428,8 +428,8 @@ public class Bot extends TelegramLongPollingBot {
 		long anotherId = requestProcessor.getAnotherPlayer(id);
 		usersStatuses.put(id, 0);
 		usersStatuses.put(anotherId, 0);
-		sendDefaultReplyKeyboard(id, "Главное меню");
-		sendDefaultReplyKeyboard(anotherId, "Главное меню");
+		sendDefaultReplyKeyboard(id, "Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ");
+		sendDefaultReplyKeyboard(anotherId, "Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ");
 		usersInGame.remove(id);
 		usersInGame.remove(anotherId);
 		radiantUsers.remove(id);

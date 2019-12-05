@@ -35,17 +35,17 @@ public class RequestProcessor {
 		heroStats = stat;
 		availableRequests = new HashMap<String, Request>();
 		availableRequests.put("getstat", new HeroStatRequest());
-		availableRequests.put("помощь", new HelpRequest());
-		availableRequests.put("статистика", new AllStatRequest());
-		availableRequests.put("совет", new HeroAdviceRequest());
-		availableRequests.put("свет", new SideSelectRequest("radiant"));
-		availableRequests.put("тьма", new SideSelectRequest("dire"));
+		availableRequests.put("РїРѕРјРѕС€СЊ", new HelpRequest());
+		availableRequests.put("СЃС‚Р°С‚РёСЃС‚РёРєР°", new AllStatRequest());
+		availableRequests.put("СЃРѕРІРµС‚", new HeroAdviceRequest());
+		availableRequests.put("СЃРІРµС‚", new SideSelectRequest("radiant"));
+		availableRequests.put("С‚СЊРјР°", new SideSelectRequest("dire"));
 		availableRequests.put("radiant", new HeroSelectRequest("radiant"));
 		availableRequests.put("dire", new HeroSelectRequest("dire"));
 		availableRequests.put("end", new HeroSelectEndingRequest());
-		availableRequests.put("герои", new HeroListRequest());
-		availableRequests.put("игра", new DraftGameRequest());
-		availableRequests.put("выйти", new LeaveGameRequest());
+		availableRequests.put("РіРµСЂРѕРё", new HeroListRequest());
+		availableRequests.put("РёРіСЂР°", new DraftGameRequest());
+		availableRequests.put("РІС‹Р№С‚Рё", new LeaveGameRequest());
 		availableRequests.put("draft", new DraftHeroRequest());
 	}
 	
@@ -62,13 +62,13 @@ public class RequestProcessor {
 			switch (status)
 			{
 				case 1:
-					if (currentRequest.equalsIgnoreCase("выйти"))
-						return availableRequests.get("выйти").getRequestResult(currentRequest, heroStats, this, chatId);
+					if (currentRequest.equalsIgnoreCase("РІС‹Р№С‚Рё"))
+						return availableRequests.get("РІС‹Р№С‚Рё").getRequestResult(currentRequest, heroStats, this, chatId);
 					return availableRequests.get("draft").getRequestResult(currentRequest, heroStats, this, chatId);
 				case 2:
-					if (currentRequest.equalsIgnoreCase("результат"))
+					if (currentRequest.equalsIgnoreCase("СЂРµР·СѓР»СЊС‚Р°С‚"))
 						return availableRequests.get("end").getRequestResult(currentRequest, heroStats, this, chatId);
-					if (currentRequest.equalsIgnoreCase("свет") || currentRequest.equalsIgnoreCase("тьма"))
+					if (currentRequest.equalsIgnoreCase("СЃРІРµС‚") || currentRequest.equalsIgnoreCase("С‚СЊРјР°"))
 						return availableRequests.get(currentRequest).getRequestResult(currentRequest, heroStats, this, chatId);
 					return availableRequests.get(currentSides.get(chatId)).getRequestResult(currentRequest, heroStats, this, chatId);
 				case 3:
@@ -82,13 +82,13 @@ public class RequestProcessor {
 			{
 				return availableRequests.get(requestName).getRequestResult(currentRequest.substring(currentRequest.indexOf(' ') + 1), heroStats, this, chatId);
 			}
-			return new RequestResult("Неверный запрос, напишите <b>help</b>, чтобы показать доступные запросы.\n", RequestType.ERROR, chatId);
+			return new RequestResult("РќРµРІРµСЂРЅС‹Р№ Р·Р°РїСЂРѕСЃ, РёСЃРїРѕР»СЊР·СѓР№С‚Рµ <b>РїРѕРјРѕС‰СЊ</b>, С‡С‚РѕР±С‹ РїРѕРєР°Р·Р°С‚СЊ РґРѕСЃС‚СѓРїРЅС‹Рµ Р·Р°РїСЂРѕСЃС‹.\n", RequestType.ERROR, chatId);
 		}
 		else
 		{
 			if (availableRequests.containsKey(currentRequest))
 				return availableRequests.get(currentRequest).getRequestResult("", heroStats, this, chatId);
-			return new RequestResult("Неверный запрос, напишите <b>help</b>, чтобы показать доступные запросы.\n", RequestType.ERROR, chatId);
+			return new RequestResult("РќРµРІРµСЂРЅС‹Р№ Р·Р°РїСЂРѕСЃ, РёСЃРїРѕР»СЊР·СѓР№С‚Рµ <b>РїРѕРјРѕС‰СЊ</b>, С‡С‚РѕР±С‹ РїРѕРєР°Р·Р°С‚СЊ РґРѕСЃС‚СѓРїРЅС‹Рµ Р·Р°РїСЂРѕСЃС‹.\n", RequestType.ERROR, chatId);
 		}
 	}
 	

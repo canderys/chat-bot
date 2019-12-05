@@ -14,10 +14,10 @@ public class HeroStatRequest implements Request {
 				return new RequestResult(makeFinalName(stat.get(i).getName()) + "\n<b>Win rate:</b> <i>" +
 						Math.round(stat.get(i).getWinRate() * 100.0) / 100.0 +
 						"%</i>\n<b>Pick rate:</b> <i>" + Math.round(stat.get(i).getPickRate() * 100.0) / 100.0 + "%</i>\n" +
-						"Если вы хотите посмотреть полную статистику, вы можете посмотреть эту страницу: https://stratz.com/ru-ru/heroes/" + stat.get(i).getId(), RequestType.GETHEROSTAT, chatId);
+						"Р•СЃР»Рё РІС‹ С…РѕС‚РёС‚Рµ РїРѕСЃРјРѕС‚СЂРµС‚СЊ РїРѕР»РЅСѓСЋ СЃС‚Р°С‚РёСЃС‚РёРєСѓ, Р’С‹ РјРѕР¶РµС‚Рµ РїРѕСЃРµС‚РёС‚СЊ СЌС‚Сѓ СЃС‚СЂР°РЅРёС†Сѓ: https://stratz.com/ru-ru/heroes/" + stat.get(i).getId(), RequestType.GETHEROSTAT, chatId);
 			}
 		}
-		return new RequestResult("Такого героя нет, проверьте имя и попробуйте снова.", RequestType.ERROR, chatId);
+		return new RequestResult("РўР°РєРѕРіРѕ РіРµСЂРѕСЏ РЅРµС‚, РїСЂРѕРІРµСЂСЊС‚Рµ РёРјСЏ Рё РїРѕРїСЂРѕР±СѓР№С‚Рµ СЃРЅРѕРІР°.", RequestType.ERROR, chatId);
 	}
 	
 	private String makeFinalName(String name)

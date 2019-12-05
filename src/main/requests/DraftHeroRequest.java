@@ -12,8 +12,8 @@ public class DraftHeroRequest implements Request {
 		{
 			if (processor.setGameState(chatId, splittedRequest))
 				return new RequestResult(processor.getGameState(chatId), RequestType.DRAFTHERO, chatId);
-			return new RequestResult("Íåâåðíàÿ êîìàíäà", RequestType.ERROR, chatId);
+			return new RequestResult("Такого героя нет", RequestType.ERROR, chatId);
 		}
-		return new RequestResult("Íå âàø õîä", RequestType.ERROR, chatId);
+		return new RequestResult("Не ваш ход", RequestType.ERROR, chatId);
 	}
 }
