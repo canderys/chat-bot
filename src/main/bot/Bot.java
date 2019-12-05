@@ -18,6 +18,7 @@ import main.statistics.StatisticsManager;
 import main.statistics.HeroStatistics;
 import main.console.Console;
 import main.game.DraftGame;
+import main.requests.Pair;
 import main.requests.RequestProcessor;
 import main.requests.RequestResult;
 import main.requests.RequestType;
