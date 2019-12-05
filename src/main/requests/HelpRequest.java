@@ -1,23 +1,19 @@
 package main.requests;
 
 import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
 
 import main.statistics.HeroStatistics;
 
 public class HelpRequest implements Request {
-	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
+	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat, 
+			RequestProcessor processor, long chatId)
 	{
 		return new RequestResult("Ѕот умеет показывать различные статистики дл€ героев игры Dota 2. —татистика основываетс€ на данных сайта stratz.com \n"
 				+ "Ѕот имеет следующие команды:\n"
-				+ "1. <b>help</b> - показать справку\n"
-				+ "2. <b>getstat</b> [<i>hero_name</i>] - показать статистику дл€ геро€ [<i>hero_name</i>]\n"
-				+ "3. <b>getallstat</b> - показывает список героев и статистику дл€ них\n"
-				+ "4. <b>advicehero</b> - находит наиболее подход€щих героев дл€ каждой команды, учитыва€ уже выбранных героев.\n"
-				+ "ѕосле ввода команды бот переходит в режим выбора героев. „тобы выбрать геро€, нужно использовать команду:\n"
-				+ "[<b>dire</b>/<b>radiant</b>] [<i>hero_name</i>] - добавить геро€ в соответствующую команду\n"
-				+ "ƒл€ завершени€ выбора героев введите <b>end</b>\n"
-				+ "5. <b>getherolist</b> - показывает список всех героев.", RequestType.HELP);
+				+ "1. <b>ѕомощь</b> - показать справку\n"
+				+ "2. <b>—татистика</b> - показать статистику дл€ геро€\n"
+				+ "3. <b>—овет</b> - находит наиболее подход€щих героев дл€ каждой команды, учитыва€ уже выбранных героев.\n"
+				+ "4. <b>√ерои</b> - показывает список всех героев.\n"
+				+ "6. <b>»гра</b> - начать игру DraftGame", RequestType.HELP, chatId);
 	}
 }

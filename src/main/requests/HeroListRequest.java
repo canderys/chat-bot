@@ -6,7 +6,8 @@ import java.util.Collections;
 import main.statistics.HeroStatistics;
 
 public class HeroListRequest implements Request {
-	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
+	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat, 
+			RequestProcessor processor, long chatId)
 	{
 		String result = "";
 		List<String> heroes = new ArrayList<String>();
@@ -15,7 +16,7 @@ public class HeroListRequest implements Request {
 		Collections.sort(heroes);
 		for (int i = 0; i < heroes.size(); ++i)
 			result = result + makeFinalName(heroes.get(i)) + "\n";
-		return new RequestResult(result, RequestType.HEROES);
+		return new RequestResult(result, RequestType.HEROES, chatId);
 	}
 	
 	private String makeFinalName(String name)

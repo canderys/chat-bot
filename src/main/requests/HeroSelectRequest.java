@@ -12,10 +12,11 @@ public class HeroSelectRequest implements Request {
 		heroSide = side;
 	}
 	
-	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat, RequestProcessor processor)
+	public RequestResult getRequestResult(String splittedRequest, List<HeroStatistics> stat,
+			RequestProcessor processor, long chatId)
 	{
-		if (processor.addHeroToTeam(heroSide, splittedRequest))
-			return new RequestResult("Вы успешно выбрали героя", RequestType.HEROSELECT);
-		return new RequestResult("Такого героя не существует", RequestType.SELECTERROR);
+		if (processor.addHeroToTeam(heroSide, splittedRequest, chatId))
+			return new RequestResult("Вы успешно выбрали героя", RequestType.HEROSELECT, chatId);
+		return new RequestResult("Такого героя не существует", RequestType.SELECTERROR, chatId);
 	}
 }
