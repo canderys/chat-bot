@@ -1,18 +1,12 @@
 package gameTest;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import org.junit.Test;
+import org.junit.Assert;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import main.console.Console;
 import main.game.DraftGame;
 import main.game.Game;
 import main.statistics.HeroStatistics;
-import main.statistics.StatisticsGetter;
 import main.statistics.StatisticsManager;
 
 class TestDraftGame {
@@ -42,7 +36,7 @@ class TestDraftGame {
 		String expected = statGetter.getFileString(".\\test\\gameTest\\dataTestDraftGame.txt");
 		for(int y = 0; y < stringMessage.length();y++)
 		{
-			assertEquals(expected.charAt(y), stringMessage.charAt(y));
+			Assert.assertEquals(expected.charAt(y), stringMessage.charAt(y));
 		}
 			
 	}
