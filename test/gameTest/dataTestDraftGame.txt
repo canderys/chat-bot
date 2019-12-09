@@ -1,267 +1,267 @@
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: 
-Силы света запрещают героя
-Ваш ход 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: 
-Силы света запрещают героя
-Ожидайте хода соперника 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage 
-Герой запрещен anti-mage
-Силы тьмы запрещают героя
-Ожидайте хода соперника 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage 
-Герой запрещен anti-mage
-Силы тьмы запрещают героя
-Ваш ход 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe 
-Герой запрещен axe
-Силы света запрещают героя
-Ваш ход 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe 
-Герой запрещен axe
-Силы света запрещают героя
-Ожидайте хода соперника 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe bane 
-Герой запрещен bane
-Силы тьмы запрещают героя
-Ожидайте хода соперника 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe bane 
-Герой запрещен bane
-Силы тьмы запрещают героя
-Ваш ход 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe bane bloodseeker 
-Герой запрещен bloodseeker
-Силы света запрещают героя
-Ваш ход 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe bane bloodseeker 
-Герой запрещен bloodseeker
-Силы света запрещают героя
-Ожидайте хода соперника 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden 
-Герой запрещен crystal maiden
-Силы тьмы запрещают героя
-Ожидайте хода соперника 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden 
-Герой запрещен crystal maiden
-Силы тьмы запрещают героя
-Ваш ход 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
-Герой запрещен drow ranger
-Силы света выбирают героя
-Ваш ход 
-Герои сил света: 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
-Герой запрещен drow ranger
-Силы света выбирают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
-Герой выбран earthshaker
-Силы тьмы выбирают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker 
-Герои сил тьмы : 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
-Герой выбран earthshaker
-Силы тьмы выбирают героя
-Ваш ход 
-Герои сил света: earthshaker 
-Герои сил тьмы : juggernaut 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
-Герой выбран juggernaut
-Силы тьмы выбирают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker 
-Герои сил тьмы : juggernaut 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
-Герой выбран juggernaut
-Силы тьмы выбирают героя
-Ваш ход 
-Герои сил света: earthshaker 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
-Герой выбран mirana
-Силы света выбирают героя
-Ваш ход 
-Герои сил света: earthshaker 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
-Герой выбран mirana
-Силы света выбирают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
-Герой выбран morphling
-Силы света запрещают героя
-Ваш ход 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger 
-Герой выбран morphling
-Силы света запрещают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend 
-Герой запрещен shadow fiend
-Силы тьмы запрещают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend 
-Герой запрещен shadow fiend
-Силы тьмы запрещают героя
-Ваш ход 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer 
-Герой запрещен phantom lancer
-Силы света запрещают героя
-Ваш ход 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer 
-Герой запрещен phantom lancer
-Силы света запрещают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck 
-Герой запрещен puck
-Силы тьмы запрещают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck 
-Герой запрещен puck
-Силы тьмы запрещают героя
-Ваш ход 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
-Герой запрещен pudge
-Силы тьмы выбирают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
-Герой запрещен pudge
-Силы тьмы выбирают героя
-Ваш ход 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana razor 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
-Герой выбран razor
-Силы света выбирают героя
-Ваш ход 
-Герои сил света: earthshaker morphling 
-Герои сил тьмы : juggernaut mirana razor 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
-Герой выбран razor
-Силы света выбирают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling sand king 
-Герои сил тьмы : juggernaut mirana razor 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
-Герой выбран sand king
-Силы тьмы выбирают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling sand king 
-Герои сил тьмы : juggernaut mirana razor 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
-Герой выбран sand king
-Силы тьмы выбирают героя
-Ваш ход 
-Герои сил света: earthshaker morphling sand king 
-Герои сил тьмы : juggernaut mirana razor storm spirit 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
-Герой выбран storm spirit
-Силы света выбирают героя
-Ваш ход 
-Герои сил света: earthshaker morphling sand king 
-Герои сил тьмы : juggernaut mirana razor storm spirit 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
-Герой выбран storm spirit
-Силы света выбирают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling sand king sven 
-Герои сил тьмы : juggernaut mirana razor storm spirit 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
-Герой выбран sven
-Силы тьмы запрещают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling sand king sven 
-Герои сил тьмы : juggernaut mirana razor storm spirit 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge 
-Герой выбран sven
-Силы тьмы запрещают героя
-Ваш ход 
-Герои сил света: earthshaker morphling sand king sven 
-Герои сил тьмы : juggernaut mirana razor storm spirit 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny 
-Герой запрещен tiny
-Силы света запрещают героя
-Ваш ход 
-Герои сил света: earthshaker morphling sand king sven 
-Герои сил тьмы : juggernaut mirana razor storm spirit 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny 
-Герой запрещен tiny
-Силы света запрещают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling sand king sven 
-Герои сил тьмы : juggernaut mirana razor storm spirit 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny vengeful spirit 
-Герой запрещен vengeful spirit
-Силы света выбирают героя
-Ваш ход 
-Герои сил света: earthshaker morphling sand king sven 
-Герои сил тьмы : juggernaut mirana razor storm spirit 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny vengeful spirit 
-Герой запрещен vengeful spirit
-Силы света выбирают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling sand king sven windranger 
-Герои сил тьмы : juggernaut mirana razor storm spirit 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny vengeful spirit 
-Герой выбран windranger
-Силы тьмы выбирают героя
-Ожидайте хода соперника 
-Герои сил света: earthshaker morphling sand king sven windranger 
-Герои сил тьмы : juggernaut mirana razor storm spirit 
-Запрещенные герои: anti-mage axe bane bloodseeker crystal maiden drow ranger shadow fiend phantom lancer puck pudge tiny vengeful spirit 
-Герой выбран windranger
-Силы тьмы выбирают героя
-Ваш ход 
-Герои сил света: earthshaker morphling sand king sven windranger 
-Герои сил тьмы : juggernaut mirana razor storm spirit zeus 
-Синергия героев сил света 12.681584454172395
-Синергия героев сил тьмы -1.7281126403626725
-Вероятность победы сил света выше
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: 
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: 
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ abaddon
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ abaddon
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ alchemist
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ alchemist
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ ancient apparition
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ ancient apparition
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ anti-mage
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ anti-mage
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ arc warden
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ arc warden
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ axe
+РЎРёР»С‹ СЃРІРµС‚Р° РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ axe
+РЎРёР»С‹ СЃРІРµС‚Р° РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ bane
+РЎРёР»С‹ С‚СЊРјС‹ РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ bane
+РЎРёР»С‹ С‚СЊРјС‹ РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ batrider
+РЎРёР»С‹ С‚СЊРјС‹ РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ batrider
+РЎРёР»С‹ С‚СЊРјС‹ РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ beastmaster
+РЎРёР»С‹ СЃРІРµС‚Р° РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ beastmaster
+РЎРёР»С‹ СЃРІРµС‚Р° РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ bloodseeker
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ bloodseeker
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ bounty hunter
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ bounty hunter
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ brewmaster
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ brewmaster
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ bristleback
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ bristleback
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ broodmother
+РЎРёР»С‹ С‚СЊРјС‹ РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ broodmother
+РЎРёР»С‹ С‚СЊРјС‹ РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ centaur warrunner
+РЎРёР»С‹ СЃРІРµС‚Р° РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ centaur warrunner
+РЎРёР»С‹ СЃРІРµС‚Р° РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ chaos knight
+РЎРёР»С‹ С‚СЊРјС‹ РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ chaos knight
+РЎРёР»С‹ С‚СЊРјС‹ РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ chen
+РЎРёР»С‹ СЃРІРµС‚Р° РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ chen
+РЎРёР»С‹ СЃРІРµС‚Р° РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight clinkz 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ clinkz
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight clinkz 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ clinkz
+РЎРёР»С‹ С‚СЊРјС‹ Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight clinkz 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother clockwerk 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ clockwerk
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight clinkz 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother clockwerk 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ clockwerk
+РЎРёР»С‹ СЃРІРµС‚Р° Р·Р°РїСЂРµС‰Р°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight clinkz 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother clockwerk crystal maiden 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ crystal maiden
+РЎРёР»С‹ СЃРІРµС‚Р° РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight clinkz 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother clockwerk crystal maiden 
+Р“РµСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ crystal maiden
+РЎРёР»С‹ СЃРІРµС‚Р° РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight clinkz dark seer 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother clockwerk crystal maiden 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ dark seer
+РЎРёР»С‹ С‚СЊРјС‹ РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+РћР¶РёРґР°Р№С‚Рµ С…РѕРґР° СЃРѕРїРµСЂРЅРёРєР° 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight clinkz dark seer 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen 
+Р—Р°РїСЂРµС‰РµРЅРЅС‹Рµ РіРµСЂРѕРё: abaddon alchemist ancient apparition anti-mage arc warden axe bounty hunter brewmaster bristleback broodmother clockwerk crystal maiden 
+Р“РµСЂРѕР№ РІС‹Р±СЂР°РЅ dark seer
+РЎРёР»С‹ С‚СЊРјС‹ РІС‹Р±РёСЂР°СЋС‚ РіРµСЂРѕСЏ
+Р’Р°С€ С…РѕРґ 
+Р“РµСЂРѕРё СЃРёР» СЃРІРµС‚Р°: bane bloodseeker chaos knight clinkz dark seer 
+Р“РµСЂРѕРё СЃРёР» С‚СЊРјС‹ : batrider beastmaster centaur warrunner chen dark willow 
+РЎРёРЅРµСЂРіРёСЏ РіРµСЂРѕРµРІ СЃРёР» СЃРІРµС‚Р° 0.8148707508243427
+РЎРёРЅРµСЂРіРёСЏ РіРµСЂРѕРµРІ СЃРёР» С‚СЊРјС‹ -5.941401160377497
+Р’РµСЂРѕСЏС‚РЅРѕСЃС‚СЊ РїРѕР±РµРґС‹ СЃРёР» СЃРІРµС‚Р° РІС‹С€Рµ

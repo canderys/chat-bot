@@ -95,7 +95,7 @@ public class StatisticsManager implements StatisticsGetter
 	{
 		String contents = null;
 		try {
-			contents = new String(Files.readAllBytes(Paths.get(name)));
+			contents = new String(Files.readAllBytes(Paths.get(name)),"UTF-8");
 		} catch (IOException e) {
 			return null;
 		}

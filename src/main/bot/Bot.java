@@ -35,7 +35,6 @@ public class Bot extends TelegramLongPollingBot {
 	private HashSet<Long> direUsers = new HashSet<Long>();
 	
 	private Map<Long, Integer> usersStatuses = new HashMap<Long, Integer>();
-	//�������: 0 - ������� �������������� � �����, 1 - ����, 2 - ��������� �� ����, 3 - �������� ����������
 	
 	public Bot()
 	{

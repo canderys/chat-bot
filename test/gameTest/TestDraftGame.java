@@ -38,12 +38,12 @@ class TestDraftGame {
 		}
 		message.append(draftGame.getState(0));
 		String stringMessage = message.toString();
+		//statGetter.writeFile(".\\test\\gameTest\\dataTestDraftGame.txt", stringMessage);
 		String expected = statGetter.getFileString(".\\test\\gameTest\\dataTestDraftGame.txt");
 		for(int y = 0; y < stringMessage.length();y++)
 		{
 			assertEquals(expected.charAt(y), stringMessage.charAt(y));
 		}
-				
 			
 	}
 }

@@ -1,5 +1,6 @@
 package main.game;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -101,7 +102,11 @@ public class DraftGame implements Game<HeroStatistics> {
 				else
 					message.append("Ожидайте хода соперника \n");
 			}
-			return message.toString();
+			try {
+				return new String(message.toString().getBytes(),"UTF-8");
+			} catch (UnsupportedEncodingException e) {
+				e.printStackTrace();
+			}
 		}
 		message.append("Герои сил света: ");
 		for (HeroStatistics hero : radiantPick)
