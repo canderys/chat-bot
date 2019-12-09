@@ -48,10 +48,11 @@
     	<version>4.4.0.1</version>
 	</dependency>
 	<dependency>
-		<groupId>org.junit.jupiter</groupId>
-		<artifactId>junit-jupiter-engine</artifactId>
-		<version>5.5.1</version>
-		<scope>test</scope>
+    	<groupId>org.junit</groupId>
+    	<artifactId>junit-bom</artifactId>
+    	<version>5.5.1</version>
+    	<type>pom</type>
+    	<scope>test</scope>
 	</dependency>
 	<dependency>
     <groupId>javax.annotation</groupId>

@@ -126,7 +126,7 @@ public class RequestProcessor {
 		return "Radiant pick: " + radiantBestHero.getName() + "\nDire pick: " + direBestHero.getName();
 	}
 	
-	public boolean addUserToGameQueue(long chatId)
+	public synchronized boolean addUserToGameQueue(long chatId)
 	{
 		if (currentUserInQueue == -10000000)
 		{
@@ -143,9 +143,16 @@ public class RequestProcessor {
 		return true;
 	}
 	
-	public void clearGameQueue()
+	public void clearGameQueueIfUserInQueue(long id)
 	{
-		currentUserInQueue = -10000000;
+		if (currentUserInQueue == id)
+			currentUserInQueue = -10000000;
+	}
+	
+	public synchronized void leaveGame(long id)
+	{
+		clearGameQueueIfUserInQueue(id);
+		endGameIfGameExists(id);
 	}
 	
 	public boolean setGameState(long chatId, String heroName)
@@ -173,15 +180,18 @@ public class RequestProcessor {
 		return currentGames.get(chatId).snd.isEnd();
 	}
 	
-	public void endGame(long chatId)
+	public void endGameIfGameExists(long chatId)
 	{
-		long anotherId = getAnotherPlayer(chatId);
-		bot.endGame(chatId);
-		currentGames.remove(chatId);
-		currentGames.remove(anotherId);
+		if (currentGames.containsKey(chatId))
+		{
+			long anotherId = getAnotherPlayer(chatId);
+			bot.endGame(chatId);
+			currentGames.remove(chatId);
+			currentGames.remove(anotherId);
+		}
 	}
 	
-	public boolean isRightTurn(long chatId)
+	public synchronized boolean isRightTurn(long chatId)
 	{
 		return currentGames.get(chatId).snd.getTurn() == bot.getUserSide(chatId);
 	}
@@ -191,12 +201,12 @@ public class RequestProcessor {
 		return gameWasFound;
 	}
 	
-	public boolean userInQueue(long chatId)
+	public synchronized boolean userInQueue(long chatId)
 	{
 		return chatId == currentUserInQueue;
 	}
 	
-	public boolean gameExists(long chatId)
+	public synchronized boolean gameExists(long chatId)
 	{
 		return currentGames.containsKey(chatId);
 	}
